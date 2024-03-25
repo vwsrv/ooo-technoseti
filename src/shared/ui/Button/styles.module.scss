@@ -1,0 +1,35 @@
+.button {
+  padding: 14px 25px;
+  cursor: pointer;
+  min-height: 50px;
+  max-width: 227px;
+  border-radius: 5px;
+  position: relative;
+  border-color: transparent;
+  background-color: white;
+  transition: 0.3s;
+
+  &:not(:disabled):active {
+    transform: translateY(1px);
+  }
+
+  &.blue {
+    background-color: var(--blue-color);
+    color: var(--black-color);
+
+    &:hover {
+      background-color: var(--black-color);
+      color: var(--white-color);
+    }
+  }
+
+  &.white {
+    border: 1px solid var(--black-color);
+    background-color: var(--white-color);
+  }
+
+  &:hover {
+    background-color: var(--pink-color);
+    color: var(--white-color);
+  }
+}
