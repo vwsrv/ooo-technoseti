@@ -1,0 +1,23 @@
+.menuNavigation {
+  background-color: #0f0f16;
+  width: 100%;
+  float: left;
+  clear: both;
+  padding: 64px 60px 50px 60px;
+  box-sizing: border-box;
+
+  .menuWrapper {
+    list-style-type: none;
+    padding: 0;
+
+    &:hover {
+      li {
+        opacity: 0.5;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
