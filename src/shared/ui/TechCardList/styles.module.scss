@@ -1,0 +1,12 @@
+.techCardList {
+  position: relative;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  float: left;
+  clear: both;
+
+  .techCardListContainer {
+    list-style-type: none;
+  }
+}
