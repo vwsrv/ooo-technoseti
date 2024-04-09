@@ -1,25 +1,21 @@
 import React from "react";
-import { SectionHeading } from "@/shared/ui/SectionHeading/SectionHeading";
-import { TechCard } from "@/shared/ui/TechCard/TechCard";
-import techImage from "../../shared/images/for-tech-card/tech-one.svg";
+import { TechCardList } from "@/shared/ui/TechCardList/TechCardList";
 
 export const DevPage: React.FC = () => {
+  const TechCardListData = [{
+    name: 'Проектирование', description: 'Проектируем очистные, КНС, КОС, ЛОС и т д. Согласовываем утверждаем РД. Прям рэпчина'
+  },
+  {
+    name: 'Поставка в срок', description: 'Быстро и в срок Быстро и в срок'
+  },
+  {
+    name: 'Шеф-монтаж', description: 'Быстро и в срок Быстро и в срок Быстро и в срок'
+  }]
   return (
     <div>
-      <div>
-        <TechCard
-          name="Lorem ipsum dolor sit amet."
-          description="Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
-          imageUrl={techImage}
-        />
-
-
+      <div className="test-class">
+        <TechCardList techCardList={TechCardListData}/>
       </div>
-      <TechCard
-          name="Lorem ipsum dolor sit amet."
-          description="Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
-          imageUrl={techImage}
-        />
     </div>
   );
 };

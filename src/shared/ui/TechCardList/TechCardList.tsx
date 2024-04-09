@@ -9,11 +9,11 @@ export const TechCardList: React.FC<TypeTechCardListProps> = (props) => {
 
   return (
     <div className={cn(classes.techCardList)}>
-      {techCardList.map((cardItemData, index) => (
-        <ul className={cn(classes.techCardListContainer)} key={index}>
-          <TechCard cardItemData={cardItemData} />
-        </ul>
-      ))}
+      <ul className={cn(classes.techCardListContainer)}>
+        {techCardList.map((cardItemData, index) => (
+          <TechCard cardItemData={cardItemData} key={index} />
+        ))}
+      </ul>
     </div>
   );
 };

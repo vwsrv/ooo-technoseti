@@ -5,6 +5,7 @@ import cn from "classnames";
 import classes from "./styles.module.scss";
 import Image from "next/image";
 import { TypeTechCardProps } from "./types";
+import { Arrow } from "../../Arrow/Arrow";
 import techCardLogo from '../../../images/main-logo/logo-short.svg';
 
 
@@ -35,6 +36,7 @@ export const TechCard: React.FC<TypeTechCardProps> = (props) => {
       <div className={cn(classes.techCardContainer)}>
         <h3 className={cn(classes.techCardName)}>{cardItemData.name}</h3>
         <p className="description">{cardItemData.description}</p>
+        <Arrow />
       </div>
     </li>
   );
