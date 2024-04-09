@@ -1,0 +1,66 @@
+.videobox {
+  cursor: pointer;
+  position: relative;
+  width: 280px;
+  color: var(--grey-color);
+  text-transform: uppercase;
+  background: 0;
+  border: 0;
+  max-width: fit-content;
+
+  &:hover span::after {
+    animation: ripple 2s forwards;
+  }
+
+  span {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: 7px;
+      top: -7px;
+      background-color: inherit;
+      z-index: -1;
+      pointer-events: none;
+      border: 2px solid var(--grey-color);
+      border-radius: 100%;
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      border: 8px solid transparent;
+      border-left-color: #ccc;
+      border-top-width: 5px;
+      border-bottom-width: 5px;
+      top: 11px;
+      left: 26px;
+      transition: all 0.2s ease;
+      z-index: 1;
+    }
+
+    @keyframes ripple {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.2);
+        opacity: 0.5;
+        background-color: var(--grey-color);
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  }
+
+  p {
+    padding-left: 55px;
+  }
+}
