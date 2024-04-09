@@ -1,13 +1,25 @@
-'use client';
+import React from "react";
+import { SectionHeading } from "@/shared/ui/SectionHeading/SectionHeading";
+import { TechCard } from "@/shared/ui/TechCard/TechCard";
+import techImage from "../../shared/images/for-tech-card/tech-one.svg";
 
-import React from 'react';
 export const DevPage: React.FC = () => {
   return (
     <div>
-      <h1>Test page</h1>
       <div>
-        <p>Hello World</p>
+        <TechCard
+          name="Lorem ipsum dolor sit amet."
+          description="Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+          imageUrl={techImage}
+        />
+
+
       </div>
+      <TechCard
+          name="Lorem ipsum dolor sit amet."
+          description="Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+          imageUrl={techImage}
+        />
     </div>
   );
 };
