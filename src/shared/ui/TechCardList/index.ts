@@ -1,0 +1,1 @@
+export { TechCardList } from "./TechCardList";
