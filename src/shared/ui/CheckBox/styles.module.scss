@@ -1,0 +1,42 @@
+.checkBox {
+  display: inline-block; /* Подстройка ширины под содержимое */
+  position: relative;
+  padding-left: 50px;
+  color: var(--white-color);
+  max-width: 500px;
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--blue-color);
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    background-image: url("../../images/for-checkbox/checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    transition: background-size 0.5s ease-in-out;
+  }
+
+  &:hover .icon {
+    animation: shrink 0.5s ease-in-out forwards;
+  }
+
+  p {
+    color: var(--grey-color);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    background-size: 20px;
+  }
+  50% {
+    background-size: 3px;
+  }
+  100% {
+    background-size: 20px;
+  }
+}
