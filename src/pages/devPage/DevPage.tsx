@@ -1,11 +1,19 @@
 import React from "react";
-import { VideoBox } from "@/shared/ui/VideoBox/VideoBox";
+import { Navigation } from "../../features/navigation/navigation";
+import { Introduction } from "@/features/introduction/introduction";
+import { Advantages } from "@/features/advantages/advantages";
+import { AboutCompany } from "@/features/about-company/about-company";
 
 export const DevPage: React.FC = () => {
   return (
     <div>
       <div className="test-class">
-        <VideoBox>Видео о компании</VideoBox>
+        <Navigation />
+      </div>
+      <div className="content">
+        <Introduction />
+        <Advantages />
+        <AboutCompany />
       </div>
     </div>
   );

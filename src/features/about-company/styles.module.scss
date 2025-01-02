@@ -1,0 +1,13 @@
+.about {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+}
+
+.aboutContainer {
+    align-content: center;
+    max-width: 450px;
+    justify-self: center;
+}
