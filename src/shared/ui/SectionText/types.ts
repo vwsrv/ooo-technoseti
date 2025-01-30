@@ -1,8 +1,9 @@
 import { HTMLAttributes, DetailedHTMLProps } from "react";
 
-export interface TypeSectionHeadingProps
+export interface TypeSectionTextProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
   title: string;
   titleBold: string;
-  variant?: 'blue' | 'pink';
+  subtitle?: string;
+  variant?: 'blue' | 'pink' | 'black';
 }

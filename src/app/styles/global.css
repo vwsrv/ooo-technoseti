@@ -3,6 +3,7 @@
     --blue-color: #24A1D3;
     --light-blue-color: #6EC1E4;
     --grey-color: #54595F;
+    --dark-grey-color: #ccc;
     --light-grey-color: #e9eff4;
     --black-color: #0f0f16;
     --pink-color: #D6007E;
@@ -38,11 +39,10 @@ h2 {
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 20px;
     line-height: 30px;
     letter-spacing: 0px;
-    font-weight: 400;
-
+    font-weight: 200;
 }
 
 p {
@@ -65,6 +65,9 @@ p.description {
     letter-spacing: 0px;
 }
 
-.test-class {
-    margin: 200px;
+.content {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin-left: 300px;
+    font-weight: 100;
 }

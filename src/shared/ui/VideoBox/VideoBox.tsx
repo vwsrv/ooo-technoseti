@@ -11,7 +11,7 @@ export const VideoBox: React.FC<TypeVideoBoxProps> = (props) => {
   return (
     <button disabled={disabled} className={cn(classes.videobox)}>
       <span />
-      <p>{children}</p>
+      <p className="description">{children}</p>
     </button>
   );
 };

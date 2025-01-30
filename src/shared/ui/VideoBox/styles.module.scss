@@ -2,11 +2,13 @@
   cursor: pointer;
   position: relative;
   width: 280px;
-  color: var(--grey-color);
+  color: var(--dark-grey-color);
   text-transform: uppercase;
   background: 0;
   border: 0;
   max-width: fit-content;
+  font-weight: 500;
+  z-index: 100;
 
   &:hover span::after {
     animation: ripple 2s forwards;
