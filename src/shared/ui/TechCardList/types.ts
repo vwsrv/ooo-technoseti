@@ -4,7 +4,7 @@ import { StaticImageData } from 'next/image';
 export interface cardItemData {
   name: string;
   description: string;
-  image: StaticImageData;
+  image?: StaticImageData;
 }
 
 export interface TechCardProps extends cardItemData {

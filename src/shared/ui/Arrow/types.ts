@@ -1,3 +1,4 @@
 export interface TypeArrowProps {
-  disabled?: boolean;
+  disabled: boolean;
+  variant: 'default' | 'black';
 }

@@ -1,7 +1,7 @@
 .imageContainer {
   position: relative;
   overflow: hidden;
-  max-width: 448px;
+  max-width: 400px;
   padding-bottom: 50px;
 }
 
@@ -14,13 +14,13 @@
   background: radial-gradient(circle, #ccc 1px, transparent 1px);
   background-size: 20px 20px;
   z-index: 1;
-  max-width: 448px;
+  max-width: 400px;
 }
 
 .imagWrapper {
   position: relative;
   z-index: 2;
-  max-width: 448px;
+  max-width: 400px;
 }
 
 .mainImage {
@@ -28,7 +28,7 @@
   display: block;
   position: relative;
   z-index: 4;
-  max-width: 448px;
+  max-width: 400px;
   height: 100%;
 }
 

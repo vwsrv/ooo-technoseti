@@ -1,0 +1,48 @@
+.portfolio {
+  background-color: var(--white-color);
+  position: relative;
+  width: 100%;
+  padding: 150px 0 150px;
+
+  .sectionContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: start; // Выравниваем элементы по центру
+    background-color: var(--white-color);
+    padding: 0 300px 0;
+  }
+
+  h1 {
+    color: var(--black-color);
+  }
+}
+
+.sectionTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menuLink {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--black-color);
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+
+  p {
+    position: relative;
+  }
+
+  &:hover {
+    color: var(--pink-color);
+  }
+}
+
+.imageContainer {
+  display: flex;
+  gap: 20px;
+}

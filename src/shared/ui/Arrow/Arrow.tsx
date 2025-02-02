@@ -6,7 +6,12 @@ import classes from './styles.module.scss';
 import { TypeArrowProps } from './types';
 
 export const Arrow: React.FC<TypeArrowProps> = (props) => {
-  const { disabled } = props;
+  const { disabled, variant } = props;
 
-  return <button disabled={disabled} className={cn(classes.arrow)} />;
+  return (
+    <button
+      disabled={disabled}
+      className={cn(classes.arrow, classes[variant])}
+    />
+  );
 };

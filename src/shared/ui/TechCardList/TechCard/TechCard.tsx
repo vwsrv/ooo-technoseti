@@ -6,7 +6,7 @@ import classes from './styles.module.scss';
 import Image from 'next/image';
 import { TypeTechCardProps } from './types';
 import { Arrow } from '../../Arrow/Arrow';
-import techCardLogo from '../../../images/main-logo/logo-short.svg';
+import techCardLogo from '../../../images/main-logo/logo-short-white.svg';
 
 export const TechCard: React.FC<TypeTechCardProps> = (props) => {
   const { cardItemData } = props;
@@ -17,8 +17,8 @@ export const TechCard: React.FC<TypeTechCardProps> = (props) => {
         {cardItemData.image ? (
           <Image
             className={cn(classes.techCardImage)}
-            height={70}
-            width={80}
+            height={230}
+            width={200}
             src={cardItemData.image}
             alt={cardItemData.name}
           />
@@ -27,15 +27,15 @@ export const TechCard: React.FC<TypeTechCardProps> = (props) => {
             src={techCardLogo}
             alt={cardItemData.name}
             className={cn(classes.techCardImage)}
-            height={70}
-            width={80}
+            height={230}
+            width={230}
           />
         )}
       </span>
       <div className={cn(classes.techCardContainer)}>
         <h3 className={cn(classes.techCardName)}>{cardItemData.name}</h3>
         <p className="description">{cardItemData.description}</p>
-        <Arrow />
+        <Arrow variant="default" disabled={false} />
       </div>
     </li>
   );

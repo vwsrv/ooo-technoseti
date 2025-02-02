@@ -1,10 +1,10 @@
 import React from 'react';
-import DevPage from '@/pages/devPage/DevPage';
+import MainPage from '@/pages/MainPage/MainPage';
 
 const HomePage: React.FC = () => {
   return (
     <main>
-      <DevPage />
+      <MainPage />
     </main>
   );
 };

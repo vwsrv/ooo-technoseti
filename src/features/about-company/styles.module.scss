@@ -1,15 +1,39 @@
 .about {
-  padding: 150px 0 150px;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   background-color: var(--white-color);
-  gap: 10%;
+  padding: 150px 300px 150px;
 }
 
 .aboutContainer {
   align-content: center;
-  max-width: 450px;
   justify-self: center;
+  max-width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .aboutContainer {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .aboutContainer {
+    padding: 0;
+  }
 }

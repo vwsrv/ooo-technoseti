@@ -1,0 +1,78 @@
+.imageHoverContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  max-width: 750px;
+  max-height: 750px;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.imageWrapper:hover .overlay {
+  opacity: 1;
+}
+
+.imageWrapper:hover .image {
+  opacity: 2;
+}
+
+.title {
+  width: 90%;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: var(--pink-color);
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.purpleLine {
+  height: 15px;
+  background-color: var(--pink-color);
+  width: 90%;
+  margin: auto;
+}
