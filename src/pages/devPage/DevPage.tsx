@@ -4,7 +4,7 @@ import { Introduction } from '@/features/introduction/introduction';
 import { Advantages } from '@/features/advantages/advantages';
 import { AboutCompany } from '@/features/about-company/about-company';
 
-export const DevPage: React.FC = () => {
+const DevPage: React.FC = () => {
   return (
     <div>
       <div className="test-class">
@@ -18,3 +18,5 @@ export const DevPage: React.FC = () => {
     </div>
   );
 };
+
+export default DevPage;

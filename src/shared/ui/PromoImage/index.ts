@@ -1,1 +1,1 @@
-export { CompanyLogo } from './CompanyLogo';
+export { PromoImage } from './PromoImage';
