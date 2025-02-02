@@ -1,12 +1,11 @@
 import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { typeFooterProps } from './types';
 import { SectionText } from '../SectionText';
 import Link from 'next/link';
 import { MenuNav } from '../MenuNav';
 
-export const Footer: React.FC<typeFooterProps> = (props) => {
+export const Footer: React.FC = () => {
   const footerLinks = [
     {
       title: 'Трубы PETRIX',
