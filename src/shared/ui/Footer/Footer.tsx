@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
   ];
 
   return (
-    <div className={cn(classes.footer)}>
+    <footer className={cn(classes.footer)}>
       <div className={cn(classes.footerColumnDescription)}>
         <SectionText title="Комплексный инжиниринг" variant="orange" />
         <p>
@@ -65,6 +65,6 @@ export const Footer: React.FC = () => {
           © 2025 ООО «ТЕХНОСЕТИ». Сделал красиво Василий В.
         </Link>
       </div>
-    </div>
+    </footer>
   );
 };
