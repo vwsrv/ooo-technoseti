@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { MenuNav } from "@/shared/ui/MenuNav";
-import styles from './index.module.scss'
+import styles from "./index.module.scss";
 import { CompanyLogo } from "@/shared/ui/CompanyLogo/CompanyLogo";
 
 export const Navigation: React.FC = () => {
@@ -16,9 +16,9 @@ export const Navigation: React.FC = () => {
 
   return (
     <div className={styles.menuBar}>
-        <CompanyLogo />
-        <MenuNav navLinks={menuNavData}/>
-        <div className={styles.menuBarLine}></div>
+      <CompanyLogo />
+      <MenuNav navLinks={menuNavData} />
+      <div className={styles.menuBarLine}></div>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
+import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from "react";
 
 export interface TypeVideoBoxProps
   extends DetailedHTMLProps<
@@ -6,5 +6,5 @@ export interface TypeVideoBoxProps
     HTMLButtonElement
   > {
   onClick?: () => void;
-  children: "string";
+  children: ReactNode;
 }

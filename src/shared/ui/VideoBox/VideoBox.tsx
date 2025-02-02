@@ -9,7 +9,7 @@ export const VideoBox: React.FC<TypeVideoBoxProps> = (props) => {
   const { onClick, children, disabled } = props;
 
   return (
-    <button disabled={disabled} className={cn(classes.videobox)}>
+    <button disabled={disabled} className={cn(classes.videobox)} onClick={onClick}>
       <span />
       <p className="description">{children}</p>
     </button>

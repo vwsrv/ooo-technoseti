@@ -1,13 +1,14 @@
 .about {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--white-color);
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  background-color: var(--white-color);
+  padding-left: 150px;
 }
 
 .aboutContainer {
-    align-content: center;
-    max-width: 450px;
-    justify-self: center;
+  align-content: center;
+  max-width: 450px;
+  justify-self: center;
 }
