@@ -1,0 +1,67 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--black-color);
+  padding: 83px 300px 49px;
+}
+
+.footerColumnDescription,
+.footerColumnSchedule,
+.footerColumnLinks,
+.footerRowAbout {
+  color: var(--dark-grey-color);
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 336px;
+  transition: color 0.3s ease;
+}
+
+.typeOrange {
+  color: var(--orange-color);
+}
+
+.workDays {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed var(--grey-color);
+  transition: border-color 0.3s ease;
+
+  &:nth-last-child(1) {
+    border-bottom: none;
+  }
+}
+
+.footerColumnLinks,
+.footerRowAbout {
+  display: flex;
+  flex-direction: column;
+
+  :visited {
+    color: var(--dark-grey-color);
+  }
+
+  p {
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+}
+
+.footerLink {
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--pink-color);
+  }
+}
+
+.footerRowAbout {
+  border-top: 2px solid var(--grey-color);
+  max-width: 100%;
+  padding: 20px 0 20px;
+}

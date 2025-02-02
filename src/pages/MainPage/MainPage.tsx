@@ -6,6 +6,7 @@ import { AboutCompany } from '@/features/about-company/about-company';
 import { OurFeatures } from '@/features/ourFeatures';
 import { Portfolio } from '@/features/portfolio/Portfolio';
 import { Sertificats } from '@/features/sertificats';
+import { Footer } from '@/shared/ui/Footer';
 
 const MainPage: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const MainPage: React.FC = () => {
         <OurFeatures />
         <Sertificats />
         <Portfolio />
+        <Footer />
       </div>
     </div>
   );
