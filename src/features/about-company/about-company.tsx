@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import React from "react";
-import cn from "classnames";
-import styles from "./styles.module.scss";
-import { SectionText } from "@/shared/ui/SectionText";
-import CompanyLogo from "../../shared/images/main-logo/for-white-bg-logo-short.svg";
-import Image from "next/image";
-import { PromoImage } from "@/shared/ui/PromoImage/PromoImage";
+import React from 'react';
+import cn from 'classnames';
+import styles from './styles.module.scss';
+import { SectionText } from '@/shared/ui/SectionText';
+import CompanyLogo from '../../shared/images/main-logo/for-white-bg-logo-short.svg';
+import Image from 'next/image';
+import { PromoImage } from '@/shared/ui/PromoImage/PromoImage';
 
 export const AboutCompany: React.FC = () => {
   return (
@@ -24,7 +24,7 @@ export const AboutCompany: React.FC = () => {
           alt="Логотип компании"
           width={96}
           height={96}
-          style={{ margin: "0 0 26px 0" }}
+          style={{ margin: '0 0 26px 0' }}
         ></Image>
         <h3>Артем Петров</h3>
         <p className="description">Генеральный директор</p>

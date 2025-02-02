@@ -16,7 +16,7 @@
 
   span {
     &::after {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       width: 40px;
@@ -33,7 +33,7 @@
     }
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       border: 8px solid transparent;
       border-left-color: #ccc;

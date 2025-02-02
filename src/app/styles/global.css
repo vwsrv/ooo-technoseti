@@ -1,72 +1,72 @@
 :root {
-    --white-color: #ffffff;
-    --blue-color: #23A1D4;
-    --light-blue-color: #6EC1E4;
-    --grey-color: #54595F;
-    --dark-grey-color: #ccc;
-    --light-grey-color: #e9eff4;
-    --black-color: #0f0f16;
-    --pink-color: #D6007E;
-    --orange-color: #ff8f03;
-    --dark-green-color: #1B2C33;
+  --white-color: #ffffff;
+  --blue-color: #23a1d4;
+  --light-blue-color: #6ec1e4;
+  --grey-color: #54595f;
+  --dark-grey-color: #ccc;
+  --light-grey-color: #e9eff4;
+  --black-color: #0f0f16;
+  --pink-color: #d6007e;
+  --orange-color: #ff8f03;
+  --dark-green-color: #1b2c33;
 }
 
 body {
-    font-family: var(--font-montserrat);
-    background-color: var(--dark-green-color);
+  font-family: var(--font-montserrat);
+  background-color: var(--dark-green-color);
 }
 
 h1,
 h2,
 h3 {
-    font-family: var(--font-montserrat);
-    margin: 0;
-    padding: 0;
+  font-family: var(--font-montserrat);
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    font-size: 48px;
-    line-height: 1;
-    font-weight: 500;
-    letter-spacing: 0px;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0px;
 }
 
 h2 {
-    font-size: 48px;
-    line-height: 1;
-    font-weight: 300;
-    letter-spacing: 0px;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: 0px;
 }
 
 h3 {
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0px;
-    font-weight: 200;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  font-weight: 200;
 }
 
 p {
-    margin: 0;
-    padding: 0;
-    line-height: 1.7;
-    letter-spacing: 0px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  letter-spacing: 0px;
 }
 
 p.name {
-    font-size: 18px;
-    letter-spacing: 0px;
-    font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0px;
+  font-weight: 400;
 }
 
 p.description {
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0px;
 }
 
 .content {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    margin-left: 300px;
-    font-weight: 100;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  margin-left: 300px;
+  font-weight: 100;
 }

@@ -1,4 +1,4 @@
-import { HTMLAttributes, DetailedHTMLProps } from "react";
+import { HTMLAttributes, DetailedHTMLProps } from 'react';
 
 export interface TypeSectionTextProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {

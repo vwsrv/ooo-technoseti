@@ -1,1 +1,1 @@
-export { VideoBox } from "./VideoBox";
+export { VideoBox } from './VideoBox';

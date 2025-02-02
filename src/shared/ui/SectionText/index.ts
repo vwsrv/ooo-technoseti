@@ -1,1 +1,1 @@
-export { SectionText } from "./SectionText";
+export { SectionText } from './SectionText';

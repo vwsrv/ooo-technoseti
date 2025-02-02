@@ -1,8 +1,8 @@
-import React from "react";
-import { Navigation } from "../../features/navigation/navigation";
-import { Introduction } from "@/features/introduction/introduction";
-import { Advantages } from "@/features/advantages/advantages";
-import { AboutCompany } from "@/features/about-company/about-company";
+import React from 'react';
+import { Navigation } from '../../features/navigation/navigation';
+import { Introduction } from '@/features/introduction/introduction';
+import { Advantages } from '@/features/advantages/advantages';
+import { AboutCompany } from '@/features/about-company/about-company';
 
 export const DevPage: React.FC = () => {
   return (

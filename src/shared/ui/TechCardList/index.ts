@@ -1,1 +1,1 @@
-export { TechCardList } from "./TechCardList";
+export { TechCardList } from './TechCardList';

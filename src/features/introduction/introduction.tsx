@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import styles from "./styles.module.scss";
-import { SectionText } from "@/shared/ui/SectionText";
+import styles from './styles.module.scss';
+import { SectionText } from '@/shared/ui/SectionText';
 
-import { VideoBox } from "@/shared/ui/VideoBox";
-import { log } from "console";
+import { VideoBox } from '@/shared/ui/VideoBox';
+import { log } from 'console';
 
 export const Introduction: React.FC = () => {
   return (
@@ -19,7 +19,7 @@ export const Introduction: React.FC = () => {
           />
           <VideoBox
             disabled={false}
-            onClick={() => console.log("Переход на видео")}
+            onClick={() => console.log('Переход на видео')}
           >
             Видео о компании
           </VideoBox>

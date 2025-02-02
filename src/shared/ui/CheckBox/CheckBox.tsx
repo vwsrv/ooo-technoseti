@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import React from "react";
-import cn from "classnames";
-import classes from "./styles.module.scss";
-import { TypeCheckBoxProps } from "./types";
+import React from 'react';
+import cn from 'classnames';
+import classes from './styles.module.scss';
+import { TypeCheckBoxProps } from './types';
 
 export const CheckBox: React.FC<TypeCheckBoxProps> = (props) => {
   const { title, subtitle } = props;

@@ -1,10 +1,10 @@
 .menuBar {
-    position: fixed;
-    width: 300px;
-    height: 100%;
-    top: 0;
-    height: 100vh;
-    background-color: var(--black-color);
-    height: 100%; /* Высота навигации на всю высоту экрана */
-    overflow-y: auto; /* Прокрутка для навигации, если контент превышает высоту */
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  top: 0;
+  height: 100vh;
+  background-color: var(--black-color);
+  height: 100%; /* Высота навигации на всю высоту экрана */
+  overflow-y: auto; /* Прокрутка для навигации, если контент превышает высоту */
 }

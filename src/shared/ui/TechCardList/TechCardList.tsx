@@ -1,10 +1,10 @@
-'use client'
+'use client';
 
-import React from "react";
-import cn from "classnames";
-import classes from "./styles.module.scss";
-import { TypeTechCardListProps } from "./types";
-import { TechCard } from "./TechCard/TechCard";
+import React from 'react';
+import cn from 'classnames';
+import classes from './styles.module.scss';
+import { TypeTechCardListProps } from './types';
+import { TechCard } from './TechCard/TechCard';
 
 export const TechCardList: React.FC<TypeTechCardListProps> = (props) => {
   const { techCardList } = props;

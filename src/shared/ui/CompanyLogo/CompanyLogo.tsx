@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import React from "react";
-import cn from "classnames";
-import classes from "./index.module.scss";
-import Image from "next/image";
-import ImageLink from "../../images/main-logo/logo-width-white.svg";
+import React from 'react';
+import cn from 'classnames';
+import classes from './index.module.scss';
+import Image from 'next/image';
+import ImageLink from '../../images/main-logo/logo-width-white.svg';
 
 export const CompanyLogo: React.FC = () => {
   return (

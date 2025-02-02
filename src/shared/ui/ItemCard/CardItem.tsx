@@ -1,13 +1,13 @@
 'use client';
 
-import React from "react";
-import Image from "next/image";
-import classes from "./styles.module.scss";
-import cn from "classnames";
-import Link from "next/link";
-import { TypeCardItemProps } from "./types";
-import { Button } from "../Button";
-import { imageNotFound } from "./constants/constants";
+import React from 'react';
+import Image from 'next/image';
+import classes from './styles.module.scss';
+import cn from 'classnames';
+import Link from 'next/link';
+import { TypeCardItemProps } from './types';
+import { Button } from '../Button';
+import { imageNotFound } from './constants/constants';
 
 export const CardItem: React.FC<TypeCardItemProps> = (props) => {
   const { dataList, className, ...otherProps } = props;
@@ -17,15 +17,15 @@ export const CardItem: React.FC<TypeCardItemProps> = (props) => {
       {dataList.map((item, index) => (
         <div key={index} className={cn(classes.cardContainer)}>
           <div className={cn(classes.imageContainer)}>
-              <Image
-                className={cn(classes.cardImage)}
-                src={item.link ? item.link : imageNotFound}
-                alt={item.title}
-                fill={true}
-              />
+            <Image
+              className={cn(classes.cardImage)}
+              src={item.link ? item.link : imageNotFound}
+              alt={item.title}
+              fill={true}
+            />
           </div>
           <div className={cn(classes.cardInfo)}>
-              <h3 className={cn(classes.cardTitle)}>{item.title}</h3>
+            <h3 className={cn(classes.cardTitle)}>{item.title}</h3>
             <p className={cn(classes.cardDescription)}>{item.description}</p>
           </div>
           <Button disabled={false} variant="pink">

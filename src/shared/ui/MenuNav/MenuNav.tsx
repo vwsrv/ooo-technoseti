@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import React from "react";
-import cn from "classnames";
-import classes from "./styles.module.scss";
-import { MenuNavLink } from "./MenuNavLink/MenuNavLink";
-import { menuNavigationProps } from "./types";
+import React from 'react';
+import cn from 'classnames';
+import classes from './styles.module.scss';
+import { MenuNavLink } from './MenuNavLink/MenuNavLink';
+import { menuNavigationProps } from './types';
 
 export const MenuNav: React.FC<menuNavigationProps> = (props) => {
   const { navLinks } = props;
