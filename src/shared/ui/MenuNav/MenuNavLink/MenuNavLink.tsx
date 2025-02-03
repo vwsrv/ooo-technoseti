@@ -12,7 +12,7 @@ export const MenuNavLink: React.FC<MenuNavLinkProps> = (props) => {
     <>
       <li className={cn(classes.menuLinkWrapper)} id="linkItem">
         <Link className={cn(classes.menuLink)} href={linkItem.link}>
-          <p>{linkItem.title}</p>
+          <p>{linkItem.name}</p>
         </Link>
       </li>
     </>

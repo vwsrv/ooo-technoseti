@@ -1,7 +1,7 @@
 import { HTMLAttributes, DetailedHTMLProps } from 'react';
 
 export interface MenuNavLink {
-  title: string;
+  name: string;
   link: string;
 }
 

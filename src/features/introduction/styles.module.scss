@@ -60,13 +60,7 @@
   }
 }
 
-/* Медиа-запросы для разных брекпоинтов */
-
 @media (max-width: 1600px) {
-  .intro {
-    height: 90vh;
-  }
-
   .introContainer .content {
     max-width: 600px;
     padding: 0 30px;
@@ -74,10 +68,6 @@
 }
 
 @media (max-width: 1400px) {
-  .intro {
-    height: 85vh;
-  }
-
   .introContainer .content {
     max-width: 550px;
     padding: 0 25px;
@@ -85,10 +75,6 @@
 }
 
 @media (max-width: 1300px) {
-  .intro {
-    height: 80vh;
-  }
-
   .introContainer .content {
     max-width: 500px;
     padding: 0 20px;

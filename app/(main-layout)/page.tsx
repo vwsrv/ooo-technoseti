@@ -4,7 +4,7 @@ import cn from './styles.module.scss';
 
 const HomePage: React.FC = () => {
   return (
-    <main className="content">
+    <main>
       <MainPage />
     </main>
   );

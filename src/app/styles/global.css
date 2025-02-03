@@ -13,7 +13,6 @@
 
 body {
   font-family: var(--font-montserrat);
-  background-color: var(--dark-green-color);
 }
 
 h1,
@@ -70,6 +69,7 @@ main {
   font-weight: 100;
   margin-left: 300px;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 footer {
