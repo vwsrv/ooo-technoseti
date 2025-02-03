@@ -6,22 +6,18 @@ import { AboutCompany } from '@/features/about-company/about-company';
 import { OurFeatures } from '@/features/ourFeatures';
 import { Portfolio } from '@/features/portfolio/Portfolio';
 import { Sertificats } from '@/features/sertificats';
+import { Footer } from '@/shared/ui/Footer';
 
 const MainPage: React.FC = () => {
   return (
-    <div>
-      <div className="test-class">
-        <Navigation />
-      </div>
-      <div className="content">
-        <Introduction />
-        <Advantages />
-        <AboutCompany />
-        <Advantages />
-        <OurFeatures />
-        <Sertificats />
-        <Portfolio />
-      </div>
+    <div className="mainPage">
+      <Introduction />
+      <Advantages />
+      <AboutCompany />
+      <Advantages />
+      <OurFeatures />
+      <Sertificats />
+      <Portfolio />
     </div>
   );
 };

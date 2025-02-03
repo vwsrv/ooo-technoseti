@@ -3,7 +3,7 @@
   clear: both;
   margin: 0px;
   position: relative;
-  padding: 1px 0px;
+  padding: 0px;
   box-sizing: border-box;
   transition: opacity 0.3s;
 
@@ -33,4 +33,10 @@
       width: 100%;
     }
   }
+}
+
+.menuWrapper {
+  padding: 0;
+  max-width: 179px;
+  margin: auto;
 }
