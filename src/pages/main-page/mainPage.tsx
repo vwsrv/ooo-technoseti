@@ -1,16 +1,15 @@
 import React from 'react';
-import { Navigation } from '../../features/navigation/navigation';
+import classes from './index.module.scss';
 import { Introduction } from '@/features/introduction/introduction';
 import { Advantages } from '@/features/advantages/advantages';
 import { AboutCompany } from '@/features/about-company/about-company';
 import { OurFeatures } from '@/features/ourFeatures';
 import { Portfolio } from '@/features/portfolio/Portfolio';
 import { Sertificats } from '@/features/sertificats';
-import { Footer } from '@/shared/ui/Footer';
 
 const MainPage: React.FC = () => {
   return (
-    <div className="mainPage">
+    <div className={classes.mainPage}>
       <Introduction />
       <Advantages />
       <AboutCompany />

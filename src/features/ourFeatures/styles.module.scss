@@ -1,12 +1,15 @@
 .ourFeatures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--white-color);
   position: relative;
-  width: 100%;
-  padding: 150px 0 150px;
+  padding: 150px 40px 150px;
 
   .sectionContent {
+    width: 100%;
+    max-width: 1440px;
     background-color: var(--white-color);
-    padding: 0 300px 0;
   }
 
   h1 {

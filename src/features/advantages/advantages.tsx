@@ -14,9 +14,11 @@ export const Advantages: React.FC = () => {
 
   return (
     <section className={cn(classes.advantages)}>
-      {checkBoxData.map((data, index) => (
-        <CheckBox key={index} title={data.title} subtitle={data.subtitle} />
-      ))}
+      <div className={cn(classes.advantagesContainer)}>
+        {checkBoxData.map((data, index) => (
+          <CheckBox key={index} title={data.title} subtitle={data.subtitle} />
+        ))}
+      </div>
     </section>
   );
 };
