@@ -10,7 +10,9 @@ const MainLayout: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
       <Navigation />
       <div className={cn(classes.mainLayoutWrapper)}>
         {children}
-        <Footer />
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </div>
   );
