@@ -1,0 +1,49 @@
+.contactsPage {
+  margin: auto;
+  max-width: 1170px;
+}
+
+.cardList {
+  margin-left: auto;
+  padding: 50px 40px 50px;
+  max-width: 1170px;
+  display: flex;
+  margin: auto;
+  gap: 20px;
+  transition:
+    gap 0.3s ease,
+    padding 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .cardList {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 30px 20px;
+  }
+}
+
+.cardsContainer {
+  justify-items: start;
+  align-content: start;
+}
+
+.cardItem {
+  display: flex;
+  max-width: 320px;
+  transition:
+    max-width 0.3s ease,
+    transform 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .cardItem {
+    max-width: 100%;
+    transform: scale(0.95);
+  }
+
+  .cardItem:hover {
+    transform: scale(1);
+  }
+}
