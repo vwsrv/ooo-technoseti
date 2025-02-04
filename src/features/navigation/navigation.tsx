@@ -7,11 +7,11 @@ import { CompanyLogo } from '@/shared/ui/CompanyLogo/CompanyLogo';
 
 export const Navigation: React.FC = () => {
   const menuNavData = [
-    { link: '/', title: 'Главная' },
-    { link: '/catalog', title: 'Продукция' },
-    { link: '/portfolio', title: 'Объекты' },
-    { link: '/news', title: 'Новости и статьи' },
-    { link: '/contacts', title: 'Контакты' },
+    { link: '/', name: 'Главная' },
+    { link: '/catalog', name: 'Продукция' },
+    { link: '/portfolio', name: 'Объекты' },
+    { link: '/news', name: 'Новости и статьи' },
+    { link: '/contacts', name: 'Контакты' },
   ];
 
   return (

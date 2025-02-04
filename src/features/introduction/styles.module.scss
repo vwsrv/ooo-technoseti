@@ -1,15 +1,103 @@
 .intro {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../../shared/images/for-section-intro/main-banner.jpg');
   background-size: cover;
-  width: 100%;
-  height: 52vw;
-  display: flex;
-  color: white;
+  background-repeat: no-repeat;
+  color: var(--white-color);
+  box-sizing: border-box;
 }
 
 .introContainer {
-  align-content: center;
-  max-width: 30%;
-  padding: 0 300px 0;
+  float: left;
+  clear: both;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .content {
+    max-width: 700px;
+    padding: 0 40px;
+    position: relative;
+  }
+}
+
+.intro {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../shared/images/for-section-intro/main-banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--white-color);
+  box-sizing: border-box;
+}
+
+.introContainer {
+  float: left;
+  clear: both;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .content {
+    max-width: 700px;
+    padding: 0 40px;
+    position: relative;
+  }
+}
+
+@media (max-width: 1600px) {
+  .introContainer .content {
+    max-width: 600px;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .introContainer .content {
+    max-width: 550px;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .introContainer .content {
+    max-width: 500px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .introContainer .content {
+    max-width: 450px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .introContainer .content {
+    max-width: 400px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .introContainer .content {
+    max-width: 300px;
+    padding: 0 5px;
+  }
 }

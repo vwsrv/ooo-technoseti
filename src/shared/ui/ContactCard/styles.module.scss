@@ -1,0 +1,57 @@
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.cardImage {
+  width: 100%;
+  object-fit: cover;
+}
+
+.titleContainer {
+  justify-content: space-between;
+  box-sizing: border-box;
+  justify-items: center;
+  display: flex;
+  color: var(--light-grey-color);
+  background-color: var(--almost-black-color);
+}
+
+.cardTitle {
+  align-self: center;
+  padding: 0 30px 0;
+}
+
+.cardIcon {
+  max-width: 60px;
+  min-height: 71px;
+  background-image: url('../../images/for-contactCard/location.svg');
+  background-color: var(--pink-color);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  height: 40px;
+  width: 50px;
+}
+
+.contactInfo {
+  box-sizing: border-box;
+  gap: 8px;
+  padding: 34px 30px;
+  color: var(--light-grey-color);
+  background-color: var(--black-color);
+}
+
+.contactAddress {
+  margin-bottom: 8px;
+}
+
+.contactTel {
+  margin-bottom: 8px;
+}
+
+.contactEmail {
+  color: var(--blue-color);
+}

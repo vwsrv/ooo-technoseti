@@ -1,0 +1,72 @@
+.headerSection {
+  margin: 95px 40px 0;
+  padding-bottom: 35px;
+  clear: both;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+
+    :hover {
+      color: var(--pink-color);
+      text-decoration: none;
+    }
+  }
+
+  span {
+    font-weight: normal;
+  }
+
+  &::before {
+    left: 0px;
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    height: 6px;
+    width: 70px;
+    background-color: #eee;
+  }
+
+  &::after {
+    left: 0px;
+    position: absolute;
+    content: '';
+    bottom: 13px;
+    height: 6px;
+    width: 150px;
+    background-color: #eee;
+  }
+}
+
+.titleHolder {
+  position: relative;
+}
+
+.headerContainer {
+  position: relative;
+  display: flex;
+  padding-top: 13px;
+  padding-bottom: 2px;
+}
+
+.headerSectionSeparator {
+  margin: 0 8px;
+  color: #666;
+}
+
+.headerSectionItem {
+  text-transform: capitalize;
+  cursor: pointer;
+  color: var(--blue-color);
+  text-decoration: none;
+}
+
+.headerSectionItemActive {
+  font-weight: bold;
+  color: #000;
+  cursor: default;
+}

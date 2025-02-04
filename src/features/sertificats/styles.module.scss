@@ -1,8 +1,16 @@
-.sectionContent {
+.sertificats {
   background-color: var(--black-color);
   color: var(--white-color);
+  padding: 0 40px 0;
+  box-sizing: border-box;
+}
+
+.sectionContent {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  margin: auto;
   align-items: center;
   padding: 50px 0;
 }

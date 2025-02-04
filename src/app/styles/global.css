@@ -9,13 +9,18 @@
   --pink-color: #d6007e;
   --orange-color: #ff8f03;
   --dark-green-color: #1b2c33;
+  --almost-black-color: #111422;
 }
 
 body {
   font-family: var(--font-montserrat);
-  background-color: var(--dark-green-color);
-  height: 100%;
+}
+
+ul,
+li {
+  padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 h1,
@@ -67,5 +72,15 @@ p.description {
 }
 
 main {
-  min-height: 70vh;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  font-weight: 100;
+  margin-left: 300px;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+footer {
+  padding-left: 300px;
+  background-color: var(--black-color);
 }

@@ -1,26 +1,16 @@
 .advantages {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding: 50px 25px;
   background-color: black;
-  height: 149px;
+  box-sizing: border-box;
 }
 
-@media screen and (max-width: 768px) {
-  .advantages {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0, 375px));
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .advantages {
-    padding: 50px 0 50px;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-  }
+.advantagesContainer {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  max-width: 1170px;
 }
