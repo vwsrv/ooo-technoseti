@@ -1,23 +1,26 @@
 'use client';
 
 import React from 'react';
-import styles from './styles.module.scss';
+import classes from './styles.module.scss';
 import { SectionText } from '@/shared/ui/SectionText';
 import CompanyLogo from '../../shared/images/main-logo/for-white-bg-logo-short.svg';
 import Image from 'next/image';
 import { ImageWithEffects } from '@/shared/ui/ImageWithEffects/ImageWithEffects';
+import cn from 'classnames';
 
 export const AboutCompany: React.FC = () => {
   return (
-    <section className={styles.about}>
-      <div className={styles.aboutContainer}>
-        <div className={styles.sectionContent}>
+    <section className={classes.about}>
+      <div className={classes.aboutContainer}>
+        <div className={classes.sectionContent}>
           <SectionText
             variant="black"
             title="Компания"
             titleBold="ТЕХНОСЕТИ"
-            subtitle="На перенасыщенном рынке инженерных систем мы предоставляем наиболее надежные и современные решения для наших партнеров.
-В команде специалисты с опытом более 15 лет. Мы ищем, исследуем и реализуем современные инженерные решения для систем водоснабжения, теплоснабжения, электрификации и водоотведения."
+            subtitle="Наша компания является прямым поставщиком сертефицированных ПНД фитингов из Китая и Европы. 
+Официально представляем заводы известных лидеров рынка, а также имеем максимальные скидки за счёт объёма поставляемой продукции. 
+Мы работаем на несколько регионов России. Имеем два склада в Москве и Краснодаре где комплектуем строительные объекты под ключ.
+"
           />
           <Image
             src={CompanyLogo}
@@ -26,7 +29,7 @@ export const AboutCompany: React.FC = () => {
             height={96}
             style={{ margin: '0' }}
           ></Image>
-          <h3>Артем Петров</h3>
+          <h3 className={cn(classes.title)}>Артем Петров</h3>
           <p className="description">Генеральный директор</p>
         </div>
         <ImageWithEffects />

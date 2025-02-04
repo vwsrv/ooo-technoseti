@@ -3,6 +3,9 @@
   overflow: hidden;
   max-width: 400px;
   padding-bottom: 50px;
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
 .dotsBackground {
@@ -17,10 +20,10 @@
   max-width: 400px;
 }
 
-.imagWrapper {
+.imageWrapper {
   position: relative;
   z-index: 2;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .mainImage {

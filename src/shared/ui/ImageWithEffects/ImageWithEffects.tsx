@@ -3,7 +3,7 @@
 import React, { useRef, useEffect } from 'react';
 import classes from './styles.module.scss';
 import cn from 'classnames';
-import imageForComponent from '../../images/for-imageWithEffects/for-imageWithEffecits.jpg';
+import imageForComponent from '../../images/for-imageWithEffects/for-imageWithEffecits.jpeg';
 import Image from 'next/image';
 
 export const ImageWithEffects: React.FC = () => {

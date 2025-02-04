@@ -13,15 +13,23 @@ const ContactsPage: React.FC = (props) => {
     {
       src: officeImage,
       title: 'Центральный офис',
-      address: 'Москва, ул. Лесная, д. 43',
+      address:
+        '125284, г. Москва, вн.тер.г. Муниципальный Округ Хорошевский, ш Хорошёвское, д. 38, помещ. 506',
       tel: '+7 (499) 404-14-10',
-      email: 'info@thermoforce.ru',
+      email: 'info@technoseti.ru',
     },
     {
       src: skladImage,
       imageLink: 'string',
-      title: 'Склад',
-      address: 'Московская обл, го Мытищи, ул. Южная, с13А',
+      title: 'Склад в МО',
+      address: 'улица Дзержинского, 102, Орехово-Зуево',
+      tel: '+7 (499) 404-14-10',
+    },
+    {
+      src: skladImage,
+      imageLink: 'string',
+      title: 'Склад Краснодар',
+      address: 'Майский проезд, д. 3',
       tel: '+7 (499) 404-14-10',
     },
   ];

@@ -9,8 +9,9 @@
 .advantagesContainer {
   margin: auto;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
   padding: 0;
   max-width: 1170px;
 }
