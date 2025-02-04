@@ -42,6 +42,7 @@
   align-items: center;
   border-bottom: 1px dashed var(--grey-color);
   transition: border-color 0.3s ease;
+  gap: 10px;
 
   &:nth-last-child(1) {
     border-bottom: none;

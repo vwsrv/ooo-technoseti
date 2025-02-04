@@ -1,9 +1,10 @@
 .checkBox {
-  display: inline-block; /* Подстройка ширины под содержимое */
+  box-sizing: border-box;
+  display: inline-block;
   position: relative;
   padding-left: 50px;
   color: var(--white-color);
-  max-width: 500px;
+  max-width: 350px;
 
   .icon {
     width: 30px;
@@ -26,6 +27,7 @@
 
   p {
     color: var(--grey-color);
+    filter: brightness(1.2);
   }
 }
 

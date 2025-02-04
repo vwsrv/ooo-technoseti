@@ -3,6 +3,8 @@
   max-width: 560px;
   box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
+  overflow: hidden;
+  box-sizing: border-box;
 
   &::before {
     content: '';
@@ -27,13 +29,13 @@
   }
 
   .imageContainer {
+    display: flex;
+    justify-content: center;
     position: relative;
     object-fit: cover;
 
     .cardImage {
-      max-width: 800px;
-      margin: auto;
-      object-fit: contain;
+      object-fit: cover;
       width: 100% !important;
       position: relative !important;
     }

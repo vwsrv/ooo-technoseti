@@ -26,7 +26,8 @@ export const CardItem: React.FC<TypeCardItemProps> = (props) => {
                 className={cn(classes.cardImage)}
                 src={item.link ? item.link : imageNotFound}
                 alt={item.title}
-                fill={true}
+                height={500}
+                width={800}
               />
             </div>
             <div className={cn(classes.cardInfo)}>

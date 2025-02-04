@@ -1,7 +1,8 @@
 import { DetailedHTMLProps, HTMLAttributes } from 'react';
+import { StaticImageData } from 'next/image';
 
 export interface CardItem {
-  link: string;
+  link: string | StaticImageData;
   title: string;
   description: string;
 }

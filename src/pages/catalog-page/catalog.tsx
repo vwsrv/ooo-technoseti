@@ -5,50 +5,40 @@ import cn from 'classnames';
 import classes from './styles.module.scss';
 import { CardItem } from '@/shared/ui/ItemCard';
 import { HeaderSection } from '@/shared/ui/HeaderSection/HeaderSection';
+import fittings from '../../../src/shared/images/for-section-catalog/fittings.jpeg';
+import kolodcy from '../../../src/shared/images/for-section-catalog/kolodcy.jpeg';
+import svarka from '../../../src/shared/images/for-section-catalog/svarka.jpeg';
+import trubyPnd from '../../../src/shared/images/for-section-catalog/truby-pnd.jpeg';
+import zaporArm from '../../../src/shared/images/for-section-catalog/zapor-arm.jpeg';
 
 const Catalog: React.FC = () => {
   const dataList = [
     {
-      link: '',
-      title: 'Трубы PERTiX',
-      description:
-        'Термостойкие трубы PERTiX от компании ТЕРМОФОРС Современная система трубопроводов PERTiX с увеличенным слоем теплоизоляции для наружных сетей теплоснабжения и горячего водоснабжения. ГОСТ',
+      link: fittings,
+      title: 'Фитинги пнд',
+      description: 'Фитинги электросварные и СПИГОТ для газа и воды.',
     },
     {
-      link: '',
-      title: 'Трубы PERTiX',
-      description:
-        'Термостойкие трубы PERTiX от компании ТЕРМОФОРС Современная система трубопроводов PERTiX с увеличенным слоем теплоизоляции для наружных сетей теплоснабжения и горячего водоснабжения. ГОСТ',
+      link: trubyPnd,
+      title: 'Трубы пнд',
+      description: 'Фитинги электросварные и СПИГОТ для газа и воды.',
     },
     {
-      link: '',
-      title: 'Трубы PERTiX',
+      link: zaporArm,
+      title: 'Запорная арматура',
       description:
-        'Термостойкие трубы PERTiX от компании ТЕРМОФОРС Современная система трубопроводов PERTiX с увеличенным слоем теплоизоляции для наружных сетей теплоснабжения и горячего водоснабжения. ГОСТ',
+        'Задвижки, клапаны, затворы и другая современная трубопроводная арматура.',
     },
     {
-      link: '',
-      title: 'Трубы PERTiX',
-      description:
-        'Термостойкие трубы PERTiX от компании ТЕРМОФОРС Современная система трубопроводов PERTiX с увеличенным слоем теплоизоляции для наружных сетей теплоснабжения и горячего водоснабжения. ГОСТ',
+      link: kolodcy,
+      title: 'Пластиковые колодцы',
+      description: 'Безнапорные магистральные и внутриквартальные сети.',
     },
     {
-      link: '',
-      title: 'Трубы PERTiX',
+      link: svarka,
+      title: 'Сварочное оборудование',
       description:
-        'Термостойкие трубы PERTiX от компании ТЕРМОФОРС Современная система трубопроводов PERTiX с увеличенным слоем теплоизоляции для наружных сетей теплоснабжения и горячего водоснабжения. ГОСТ',
-    },
-    {
-      link: '',
-      title: 'Трубы PERTiX',
-      description:
-        'Термостойкие трубы PERTiX от компании ТЕРМОФОРС Современная система трубопроводов PERTiX с увеличенным слоем теплоизоляции для наружных сетей теплоснабжения и горячего водоснабжения. ГОСТ',
-    },
-    {
-      link: '',
-      title: 'Трубы PERTiX',
-      description:
-        'Термостойкие трубы PERTiX от компании ТЕРМОФОРС Современная система трубопроводов PERTiX с увеличенным слоем теплоизоляции для наружных сетей теплоснабжения и горячего водоснабжения. ГОСТ',
+        'Электромуфтовые сварочные аппараты, аппараты для стыковой сварки',
     },
   ];
 
