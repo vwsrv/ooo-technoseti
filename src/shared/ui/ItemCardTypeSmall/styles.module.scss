@@ -1,0 +1,39 @@
+.cardInfo {
+  background-color: var(--light-grey-color);
+  overflow: hidden;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+}
+
+.smallCardInfoContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.titleHolder {
+  box-sizing: border-box;
+  padding: 54px 50px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.cardTitle {
+  font-size: 22px;
+  margin-bottom: 17px;
+  color: var(--blue-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardDescription {
+  color: var(--grey-color);
+  text-align: left;
+  overflow: hidden;
+  word-wrap: break-word;
+  max-width: 100%;
+}

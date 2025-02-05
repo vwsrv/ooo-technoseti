@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Посмотреть Билд: [ссылка деплой проекта](https://ooo-technoseti.vercel.app/)
 
-## Getting Started
+# Проект "ООО Техносети"
 
-First, run the development server:
+![image](https://github.com/user-attachments/assets/ae2e60db-d9b9-4997-955f-c2992855a727)
 
-```bash
+# Описание проекта ООО "Техносети":
+
+## Общая информация
+
+**Компания:** ООО "Техносети"  
+**Направление:** Поставка труб для инженерных сетей  
+**Стек технологий:** React, TypeScript  
+**Методология:** FSD (Feature-Sliced Design)
+
+## Цели проекта
+
+- Обеспечить удобный и эффективный интерфейс для пользователей.
+- Автоматизировать процессы заказа и управления запасами.
+- Улучшить взаимодействие с клиентами через систему уведомлений и отчетов.
+
+## Структура проекта
+
+### 1. Архитектура
+
+- **UI-компоненты:** Использование библиотеки компонентов, таких как Material-UI или Ant Design для создания современного интерфейса.
+- **Управление состоянием:** Redux Toolkit или Context API для управления состоянием приложения.
+- **Типизация:** Полное использование TypeScript для повышения надежности кода.
+
+### 2. Функциональные модули
+
+- **Модуль заказов**
+  - Создание, редактирование и удаление заказов.
+  - Просмотр статусов заказов.
+- **Модуль управления запасами**
+
+  - Управление номенклатурой труб.
+  - Отслеживание остатков и поступлений.
+
+- **Модуль отчетности**
+  - Генерация отчетов по продажам и запасам.
+  - Возможность экспорта данных в CSV.
+
+### 3. Интерфейс пользователя
+
+- Дизайн интерфейса, который будет адаптивным и интуитивно понятным.
+- Использование маршрутизации для разделения различных функций приложения.
+
+### 4. Интеграции
+
+- Интеграция с внешними системами для получения актуальной информации о поставках и ценах.
+- API для взаимодействия с другими модулями и системами компании.
+
+## Используемый стек
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eslint/eslint-original.svg" height="40" alt="eslint logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
+  <img width="12" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="40" alt="nextjs logo"  />
+  <img width="12" />
+  
+</div>
+
+## Установка и запуск
+
+Для установки и запуска проекта необходимо выполнить команды
+
+```
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn install
+yarn run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Сборка
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+npm run build
+yarn build
+```
