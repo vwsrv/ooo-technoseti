@@ -14,12 +14,12 @@ export const TechCard: React.FC<TypeTechCardProps> = (props) => {
   return (
     <li className={cn(classes.techCard)}>
       <span className={cn(classes.techCardLogoHolder)}>
-        {cardItemData.image ? (
+        {cardItemData.src ? (
           <Image
             className={cn(classes.techCardImage)}
             height={230}
             width={200}
-            src={cardItemData.image}
+            src={cardItemData.src}
             alt={cardItemData.name}
           />
         ) : (
