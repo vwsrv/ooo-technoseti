@@ -31,3 +31,16 @@
   margin: 0 0 33px;
   font-size: 24px;
 }
+
+.catalogDownloads {
+  color: var(--black-color);
+
+  h1 {
+    color: var(--black-color);
+  }
+}
+
+.catalogNavBar {
+  display: flex;
+  flex-direction: column;
+}

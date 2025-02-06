@@ -10,8 +10,10 @@ import { useParams } from 'next/navigation';
 import { ItemCardTypeSmall } from '@/shared/ui/ItemCardTypeSmall';
 import { ItemCardInfo } from '@/shared/ui/ItemCardInfo';
 import { CatalogLink } from '@/shared/ui/CatalogLink';
-import { CatalogNavBar } from '@/shared/ui/catalog-navbar';
+import { CatalogNavBar } from '@/shared/ui/CatalogNavBar';
 import productDescription from '@/shared/constants/proructDescription';
+import { DocumentLink } from '@/shared/ui/DocumentLink';
+import { SectionText } from '@/shared/ui/SectionText';
 
 const ProductDescription: React.FC = () => {
   const params = useParams();
@@ -62,15 +64,23 @@ const ProductDescription: React.FC = () => {
             ))}
           </div>
         </div>
-        <CatalogNavBar>
-          {filteredProducts.map((item) => (
-            <CatalogLink
-              key={item.id}
-              catalogLink={item.title}
-              name={item.title}
-            />
-          ))}
-        </CatalogNavBar>
+        <div className={cn(classes.catalogNavBar)}>
+          <CatalogNavBar>
+            {filteredProducts.map((item) => (
+              <CatalogLink
+                key={item.id}
+                catalogLink={item.title}
+                name={item.title}
+              />
+            ))}
+          </CatalogNavBar>
+          <div className={cn(classes.catalogDownloads)}>
+            <SectionText variant="orange" title="Полезные материалы:" />
+            <DocumentLink variant="doc" title="Буклет о компании .DOC" />
+            <DocumentLink variant="zip" title="Скачать .ZIP" />
+            <DocumentLink variant="pdf" title="Скачать .PDF" />
+          </div>
+        </div>
       </div>
     </div>
   );
