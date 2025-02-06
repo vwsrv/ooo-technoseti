@@ -1,15 +1,15 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { MenuNav } from '@/shared/ui/MenuNav';
+import { MenuNav } from '@/shared/ui/menu-navigation';
 import styles from './index.module.scss';
-import { CompanyLogo } from '@/shared/ui/CompanyLogo/CompanyLogo';
+import { CompanyLogo } from '@/shared/ui/company-logo/companyLogo';
 
 export const Navigation: React.FC = () => {
   const menuNavData = [
     { link: '/', name: 'Главная' },
     { link: '/catalog', name: 'Продукция' },
-    { link: '/portfolio', name: 'Объекты' },
+    { link: '/objects', name: 'Объекты' },
     { link: '/news', name: 'Новости и статьи' },
     { link: '/contacts', name: 'Контакты' },
   ];

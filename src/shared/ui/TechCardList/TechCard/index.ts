@@ -1,1 +1,0 @@
-export { TechCard } from './TechCard';

@@ -3,7 +3,7 @@
 import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { CheckBox } from '@/shared/ui/CheckBox';
+import { Advantage } from '@/shared/ui/advantage/advantage';
 
 export const Advantages: React.FC = () => {
   const checkBoxData = [
@@ -27,7 +27,7 @@ export const Advantages: React.FC = () => {
     <section className={cn(classes.advantages)}>
       <div className={cn(classes.advantagesContainer)}>
         {checkBoxData.map((data, index) => (
-          <CheckBox key={index} title={data.title} subtitle={data.subtitle} />
+          <Advantage key={index} title={data.title} subtitle={data.subtitle} />
         ))}
       </div>
     </section>

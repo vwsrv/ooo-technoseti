@@ -1,0 +1,71 @@
+.objectDescriptionPage {
+  padding: 10px;
+  cursor: pointer;
+
+  @media (max-width: 1024px) {
+    padding: 10px 20px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+}
+
+.imageList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+  gap: 5px;
+
+  @media (max-width: 1024px) {
+    gap: 10px;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 5;
+  }
+}
+
+.imageContainer {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+
+  @media (max-width: 1024px) {
+    height: 250px;
+  }
+
+  @media (max-width: 768px) {
+    height: 200px;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+}
+
+.objectTextContainer {
+  padding: 70px 0 160px;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.objectTitle {
+  margin: 0 0 24px;
+}

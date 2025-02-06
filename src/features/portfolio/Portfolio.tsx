@@ -1,15 +1,20 @@
 'use client';
 
 import styles from './styles.module.scss';
-import { SectionText } from '@/shared/ui/SectionText';
+import { SectionText } from '@/shared/ui/section-text';
 import classes from './styles.module.scss';
 import cn from 'classnames';
-import { ImageHover } from '@/shared/ui/ImageHover';
-import { Arrow } from '@/shared/ui/Arrow';
+import { ImageHover } from '@/shared/ui/image-hover';
 import Link from 'next/link';
 import ourObject from '../../shared/images/for-portfolio/our-object.jpg';
+import { useRouter } from 'next/navigation';
 
 export const Portfolio: React.FC = () => {
+  const router = useRouter();
+  const handleNavigate = () => {
+    router.push('/portfolio');
+  };
+
   return (
     <section className={styles.portfolio}>
       <div className={styles.sectionContent}>
@@ -28,7 +33,7 @@ export const Portfolio: React.FC = () => {
             imageUrl={ourObject.src}
             title="Аэровокзальный комплекс Елизово"
             buttonText="Перейти"
-            onButtonClick={() => console.log('click')}
+            onButtonClick={() => handleNavigate()}
           />
         </div>
       </div>

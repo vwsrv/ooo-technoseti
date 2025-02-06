@@ -33,7 +33,9 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/shared/constants/proructDescription.js",
-    "src/shared/constants/productData.js"
+    "src/shared/constants/products.js",
+    "src/shared/constants/portfolio.js",
+    "src/shared/constants/not-found-image-link.js"
   ],
   "exclude": ["node_modules"]
 }

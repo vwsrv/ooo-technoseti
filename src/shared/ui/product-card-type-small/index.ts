@@ -1,0 +1,1 @@
+export { ProductCardTypeSmall } from './ProductCardTypeSmall';

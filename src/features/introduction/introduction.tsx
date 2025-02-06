@@ -1,10 +1,10 @@
 'use client';
 
 import styles from './styles.module.scss';
-import { SectionText } from '@/shared/ui/SectionText';
+import { SectionText } from '@/shared/ui/section-text';
 
-import { VideoBox } from '@/shared/ui/VideoBox';
-import { Button } from '@/shared/ui/Button';
+import { VideoBox } from '@/shared/ui/video-box';
+import { Button } from '@/shared/ui/button';
 import { log } from 'console';
 
 export const Introduction: React.FC = () => {

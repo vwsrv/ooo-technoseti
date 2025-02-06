@@ -1,9 +1,9 @@
 'use client';
 
-import { SectionText } from '@/shared/ui/SectionText';
+import { SectionText } from '@/shared/ui/section-text';
 import classes from './styles.module.scss';
 import cn from 'classnames';
-import { Button } from '@/shared/ui/Button';
+import { Button } from '@/shared/ui/button';
 
 export const Sertificats: React.FC = () => {
   return (

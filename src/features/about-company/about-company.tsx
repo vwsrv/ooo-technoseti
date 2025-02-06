@@ -2,10 +2,10 @@
 
 import React from 'react';
 import classes from './styles.module.scss';
-import { SectionText } from '@/shared/ui/SectionText';
+import { SectionText } from '@/shared/ui/section-text';
 import CompanyLogo from '../../shared/images/main-logo/for-white-bg-logo-short.svg';
 import Image from 'next/image';
-import { ImageWithEffects } from '@/shared/ui/ImageWithEffects/ImageWithEffects';
+import { ImageWithEffects } from '@/shared/ui/image-with-effects/ImageWithEffects';
 import cn from 'classnames';
 
 export const AboutCompany: React.FC = () => {

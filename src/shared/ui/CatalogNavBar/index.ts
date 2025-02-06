@@ -1,1 +1,0 @@
-export { CatalogNavBar } from './CatalogNavBar';

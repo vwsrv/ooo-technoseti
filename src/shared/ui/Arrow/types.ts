@@ -1,4 +1,4 @@
-export interface TypeArrowProps {
+export interface typeArrowProps {
   disabled: boolean;
   variant: 'default' | 'black';
 }

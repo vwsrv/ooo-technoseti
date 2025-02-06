@@ -1,4 +1,4 @@
-import { imageNotFound } from '@/shared/ui/ItemCard/constants/constants';
+import { imageNotFound } from '@/shared/constants/not-found-image-link';
 const productDescription = [
   {
     id: 1,

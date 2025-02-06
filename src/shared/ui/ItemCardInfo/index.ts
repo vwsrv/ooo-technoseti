@@ -1,1 +1,0 @@
-export { ItemCardInfo } from './ItemCardInfo';

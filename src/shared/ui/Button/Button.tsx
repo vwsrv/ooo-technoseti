@@ -3,9 +3,9 @@
 import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { TypeButtonProps } from './types';
+import { typeButtonProps } from './types';
 
-export const Button: React.FC<TypeButtonProps> = (props) => {
+export const Button: React.FC<typeButtonProps> = (props) => {
   const {
     variant = 'pink',
     children,

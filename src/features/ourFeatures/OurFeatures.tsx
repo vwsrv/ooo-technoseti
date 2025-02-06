@@ -1,8 +1,8 @@
 'use client';
 
 import styles from './styles.module.scss';
-import { TechCardList } from '@/shared/ui/TechCardList';
-import { SectionText } from '@/shared/ui/SectionText';
+import { FeatureCardList } from '../feature-cardlist';
+import { SectionText } from '@/shared/ui/section-text';
 
 export const OurFeatures: React.FC = () => {
   const techCardData = [
@@ -31,7 +31,7 @@ export const OurFeatures: React.FC = () => {
             titleBold="инжиниринг"
           />
         </div>
-        <TechCardList techCardList={techCardData} />
+        <FeatureCardList techCardList={techCardData} />
       </div>
     </section>
   );
