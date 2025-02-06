@@ -12,23 +12,23 @@ const ContactsPage: React.FC = (props) => {
   const myContacts = [
     {
       src: officeImage,
-      title: 'Центральный офис',
+      title: 'Москва. Центральный офис',
       address:
-        '125284, г. Москва, вн.тер.г. Муниципальный Округ Хорошевский, ш Хорошёвское, д. 38, помещ. 506',
+        'Муниципальный Округ Хорошевский, ш Хорошёвское, д. 38, помещ. 506',
       tel: '+7 (499) 404-14-10',
       email: 'info@technoseti.ru',
     },
     {
       src: skladImage,
       imageLink: 'string',
-      title: 'Склад в МО',
+      title: 'Мос. область, Склад',
       address: 'улица Дзержинского, 102, Орехово-Зуево',
       tel: '+7 (499) 404-14-10',
     },
     {
       src: skladImage,
       imageLink: 'string',
-      title: 'Склад Краснодар',
+      title: 'Склад в Краснодаре',
       address: 'Майский проезд, д. 3',
       tel: '+7 (499) 404-14-10',
     },

@@ -1,0 +1,18 @@
+.linkContainer {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin: 0px;
+  margin-bottom: 16px;
+  transition: color 0.3s ease-in-out;
+
+  .catalogLink {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--light-grey-color);
+
+    &:hover {
+      color: var(--white-color);
+    }
+  }
+}

@@ -12,7 +12,7 @@ export const HeaderSection: React.FC<typeHeaderSectionProps> = (props) => {
   const pathnames = pathname?.split('/').filter((x) => x) || [];
   const {
     startElement = 'Главная',
-    separator = '→',
+    separator = '>',
     formatPathname = (pathname) => pathname,
     headerTitle,
   } = props;
