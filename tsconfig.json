@@ -27,6 +27,13 @@
     },
     "target": "ES2017"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/shared/constants/proructDescription.js", "src/shared/constants/productData.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/shared/constants/proructDescription.js",
+    "src/shared/constants/productData.js"
+  ],
   "exclude": ["node_modules"]
 }

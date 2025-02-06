@@ -13,7 +13,7 @@ export const ItemCardInfo: React.FC<typeItemCardInfoProps> = (props) => {
   return (
     <div className={cn(classes.cardInfo)}>
       <div className={cn(classes.imageContainer)}>
-        <Image src={src} alt={title} width={800} height={300} />
+        <Image src={src} alt={title} fill={true} />
       </div>
       <div className={cn(classes.cardInfoContainer)}>
         <div className={cn(classes.cardInfo)}>
