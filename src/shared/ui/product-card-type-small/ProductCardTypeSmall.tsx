@@ -4,7 +4,7 @@ import React from 'react';
 import classes from './styles.module.scss';
 import cn from 'classnames';
 import { typeProductCardTypeSmallProps } from './types';
-import { Button } from '../button';
+import { ButtonComponent } from '../button';
 
 export const ProductCardTypeSmall: React.FC<typeProductCardTypeSmallProps> = (
   props
@@ -18,9 +18,9 @@ export const ProductCardTypeSmall: React.FC<typeProductCardTypeSmallProps> = (
           <h3 className={cn(classes.cardTitle)}>{title}</h3>
           <p className={cn(classes.cardDescription)}>{description}</p>
         </div>
-        <Button disabled={false} variant="pink" onClick={onClick}>
+        <ButtonComponent disabled={false} variant="pink" onClick={onClick}>
           Читать далее
-        </Button>
+        </ButtonComponent>
       </div>
     </article>
   );

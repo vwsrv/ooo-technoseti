@@ -5,7 +5,7 @@ import Image from 'next/image';
 import classes from './styles.module.scss';
 import cn from 'classnames';
 import { typeProductCardProps } from './types';
-import { Button } from '../button';
+import { ButtonComponent } from '../button';
 import { imageNotFound } from '../../constants/not-found-image-link';
 
 export const ProductCard: React.FC<typeProductCardProps> = (props) => {
@@ -27,9 +27,9 @@ export const ProductCard: React.FC<typeProductCardProps> = (props) => {
           <h3 className={cn(classes.cardTitle)}>{title}</h3>
           <p className={cn(classes.cardDescription)}>{description}</p>
         </div>
-        <Button disabled={false} variant="pink" onClick={onClick}>
+        <ButtonComponent disabled={false} variant="pink" onClick={onClick}>
           Читать далее
-        </Button>
+        </ButtonComponent>
       </div>
     </article>
   );

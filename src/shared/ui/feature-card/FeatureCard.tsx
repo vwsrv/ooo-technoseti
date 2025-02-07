@@ -5,7 +5,7 @@ import cn from 'classnames';
 import classes from './styles.module.scss';
 import Image from 'next/image';
 import { typeFeatureCardProps } from './types';
-import { Arrow } from '../arrow';
+import { ArrowRight } from '../arrow';
 import techCardLogo from '../../images/main-logo/logo-short-white.svg';
 
 export const FeatureCard: React.FC<typeFeatureCardProps> = (props) => {
@@ -35,7 +35,7 @@ export const FeatureCard: React.FC<typeFeatureCardProps> = (props) => {
       <div className={cn(classes.techCardContainer)}>
         <h3 className={cn(classes.techCardName)}>{cardItemData.name}</h3>
         <p className="description">{cardItemData.description}</p>
-        <Arrow variant="default" disabled={false} />
+        <ArrowRight variant="default" disabled={false} />
       </div>
     </li>
   );

@@ -3,7 +3,7 @@
 import styles from './styles.module.scss';
 import { SectionText } from '@/shared/ui/section-text';
 import { VideoBox } from '@/shared/ui/video-box';
-import { Button } from '@/shared/ui/button';
+import { ButtonComponent } from '@/shared/ui/button';
 
 export const Introduction: React.FC = () => {
   return (
@@ -16,12 +16,12 @@ export const Introduction: React.FC = () => {
             titleBold="для инженерных сетей"
             subtitle="Мы молодая быстрорастущая организация, которая занимается поставкой труб, фассоных изделий, запорной арматуры для систем водоснабжения, водоотведения, электрификации, газификации. У нас два больших собственных склада в Москве и Краснодаре"
           />
-          <Button
+          <ButtonComponent
             variant="blue"
             onClick={() => console.log('Переход на страницу с продукцией')}
           >
             ПРОДУКЦИЯ
-          </Button>
+          </ButtonComponent>
           <VideoBox
             disabled={false}
             onClick={() => console.log('Переход на видео')}

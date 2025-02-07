@@ -5,7 +5,7 @@ import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeArrowProps } from './types';
 
-export const Arrow: React.FC<typeArrowProps> = (props) => {
+export const ArrowRight: React.FC<typeArrowProps> = (props) => {
   const { disabled, variant } = props;
 
   return (

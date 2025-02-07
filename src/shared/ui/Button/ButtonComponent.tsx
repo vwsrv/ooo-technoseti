@@ -5,7 +5,7 @@ import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeButtonProps } from './types';
 
-export const Button: React.FC<typeButtonProps> = (props) => {
+export const ButtonComponent: React.FC<typeButtonProps> = (props) => {
   const {
     variant = 'pink',
     children,
