@@ -3,7 +3,7 @@
 import styles from './styles.module.scss';
 import { SectionText } from '@/shared/ui/section-text';
 import { VideoBox } from '@/shared/ui/video-box';
-import { ButtonComponent } from '@/shared/ui/button';
+import { ButtonComponent } from '@/shared/ui/button-component';
 
 export const Introduction: React.FC = () => {
   return (

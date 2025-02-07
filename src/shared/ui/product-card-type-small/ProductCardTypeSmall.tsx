@@ -4,7 +4,7 @@ import React from 'react';
 import classes from './styles.module.scss';
 import cn from 'classnames';
 import { typeProductCardTypeSmallProps } from './types';
-import { ButtonComponent } from '../button/buttonComponent';
+import { ButtonComponent } from '../button-component/buttonComponent';
 
 export const ProductCardTypeSmall: React.FC<typeProductCardTypeSmallProps> = (
   props

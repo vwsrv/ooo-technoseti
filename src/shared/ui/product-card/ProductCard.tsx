@@ -5,7 +5,7 @@ import Image from 'next/image';
 import classes from './styles.module.scss';
 import cn from 'classnames';
 import { typeProductCardProps } from './types';
-import { ButtonComponent } from '../button/buttonComponent';
+import { ButtonComponent } from '../button-component/buttonComponent';
 import { imageNotFound } from '../../constants/not-found-image-link';
 
 export const ProductCard: React.FC<typeProductCardProps> = (props) => {
