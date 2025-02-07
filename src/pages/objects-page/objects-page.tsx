@@ -12,7 +12,7 @@ const ObjectsPage: React.FC = (props) => {
   const router = useRouter();
   const handleCardClick = (id: number) => {
     if (id) {
-      router.push(`/portfolio/${id}`);
+      router.push(`/objects/${id}`);
     } else {
       console.error('ID товара не указан');
     }

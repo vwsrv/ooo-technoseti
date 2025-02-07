@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { useParams } from 'next/navigation';
 import ObjectDescriptionPage from '@/pages/objects-page/object-description-page/object-description-page';
 import classes from './styles.module.scss';
 
