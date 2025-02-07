@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -18,12 +22,27 @@
       }
     ],
     "paths": {
-      "@/app/*": ["./src/app/*"],
-      "@/pages/*": ["./src/pages/*"],
-      "@/widgets/*": ["./src/widgets/*"],
-      "@/features/*": ["./src/features/*"],
-      "@/entities/*": ["./src/entities/*"],
-      "@/shared/*": ["./src/shared/*"]
+      "@/app/*": [
+        "./src/app/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ],
+      "@/pages/*": [
+        "./src/pages/*"
+      ],
+      "@/widgets/*": [
+        "./src/widgets/*"
+      ],
+      "@/features/*": [
+        "./src/features/*"
+      ],
+      "@/entities/*": [
+        "./src/entities/*"
+      ],
+      "@/shared/*": [
+        "./src/shared/*"
+      ],
     },
     "target": "ES2017"
   },
@@ -37,5 +56,7 @@
     "src/shared/constants/portfolio.js",
     "src/shared/constants/not-found-image-link.js"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
