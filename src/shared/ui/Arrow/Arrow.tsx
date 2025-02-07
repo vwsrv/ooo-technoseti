@@ -8,6 +8,7 @@ import { typeArrowProps } from './types';
 export const Arrow: React.FC<typeArrowProps> = (props) => {
   const { disabled, variant } = props;
 
+  
   return (
     <button
       disabled={disabled}

@@ -14,6 +14,7 @@ export const Button: React.FC<typeButtonProps> = (props) => {
     ...otherProps
   } = props;
 
+  
   return (
     <button
       disabled={disabled}
