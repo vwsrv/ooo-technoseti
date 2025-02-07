@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigation } from '@/features/navigation';
-import { Footer } from '@/shared/ui/footer';
+import { Footer } from '@/shared/ui/footer-component';
 import classes from './styles.module.scss';
 import cn from 'classnames';
 

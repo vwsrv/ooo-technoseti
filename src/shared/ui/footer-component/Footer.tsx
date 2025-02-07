@@ -3,7 +3,6 @@ import cn from 'classnames';
 import classes from './styles.module.scss';
 import { SectionText } from '../section-text';
 import Link from 'next/link';
-import { MenuNav } from '../menu-navigation-list';
 
 export const Footer: React.FC = () => {
   const footerLinks = [
