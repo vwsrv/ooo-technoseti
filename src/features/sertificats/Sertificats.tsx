@@ -1,7 +1,7 @@
 'use client';
 
 import classes from './styles.module.scss';
-import { ButtonComponent } from '@/shared/ui/button/ButtonComponent';
+import { ButtonComponent } from '@/shared/ui/button/buttonComponent';
 
 export const Sertificats: React.FC = () => {
   return (
