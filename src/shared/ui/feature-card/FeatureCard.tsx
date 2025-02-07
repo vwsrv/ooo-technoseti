@@ -5,7 +5,7 @@ import cn from 'classnames';
 import classes from './styles.module.scss';
 import Image from 'next/image';
 import { typeFeatureCardProps } from './types';
-import { Arrow } from '../arrow/arrow';
+import { Arrow } from '../arrow';
 import techCardLogo from '../../images/main-logo/logo-short-white.svg';
 
 export const FeatureCard: React.FC<typeFeatureCardProps> = (props) => {
