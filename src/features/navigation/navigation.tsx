@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { MenuNav } from '@/shared/ui/menu-navigation';
+import React from 'react';
+import { MenuNav } from '@/shared/ui/menu-navigation-list';
 import styles from './index.module.scss';
 import { CompanyLogo } from '@/shared/ui/company-logo/companyLogo';
 
