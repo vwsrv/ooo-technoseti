@@ -11,8 +11,8 @@ export const Advantage: React.FC<typeAdvantageProps> = (props) => {
   return (
     <div className={cn(classes.checkBox)}>
       <span className={cn(classes.icon)}></span>
-      <h3>{title}</h3>
-      <p>{subtitle}</p>
+      <h3 className={cn(classes.title)}>{title}</h3>
+      <p className={cn(classes.subtitle)}>{subtitle}</p>
     </div>
   );
 };

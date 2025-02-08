@@ -52,6 +52,10 @@
 
 .titleContainer {
   max-width: 500px;
+
+  @media (max-width: 1300px) {
+    max-width: 100%;
+  }
 }
 
 .subtitle {

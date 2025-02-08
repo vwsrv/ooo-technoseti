@@ -25,9 +25,13 @@
     animation: shrink 0.5s ease-in-out forwards;
   }
 
-  p {
+  .subtitle {
     color: var(--grey-color);
     filter: brightness(1.2);
+
+    @media (max-width: 1449px) {
+      display: none;
+    }
   }
 }
 

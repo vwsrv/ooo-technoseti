@@ -16,6 +16,10 @@
   max-height: 750px;
   height: auto;
   transition: opacity 0.3s ease;
+
+  @media (max-width: 1300px) {
+    max-width: 100%;
+  }
 }
 
 .overlay {
