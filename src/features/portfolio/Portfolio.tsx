@@ -12,7 +12,7 @@ import { useRouter } from 'next/navigation';
 export const Portfolio: React.FC = () => {
   const router = useRouter();
   const handleNavigate = () => {
-    router.push('/portfolio');
+    router.push('/objects');
   };
 
   return (
@@ -24,11 +24,11 @@ export const Portfolio: React.FC = () => {
             titleBold="объекты"
             subtitle="В данном разделе представлены некоторые реализованные проекты"
           />
-          <Link className={cn(classes.menuLink)} href={'/'}>
+          <Link className={cn(classes.menuLink)} href="/objects">
             <p>Смотреть еще</p>
           </Link>
         </div>
-        <div className={styles.imageContainer}>
+        <div className={styles.imageContainer} onClick={() => handleNavigate()}>
           <ImageHover
             imageUrl={ourObject.src}
             title="Аэровокзальный комплекс Елизово"

@@ -79,6 +79,8 @@
 .footerLink {
   text-decoration: none;
   transition: color 0.3s ease;
+  color: var(--grey-color);
+  text-decoration: none;
 
   &:hover {
     color: var(--pink-color);
@@ -89,6 +91,7 @@
   border-top: 2px solid var(--grey-color);
   max-width: 100%;
   padding: 20px 0 20px;
+  color: var(--grey-color);
 
   @media (max-width: 340px) {
     text-align: center;

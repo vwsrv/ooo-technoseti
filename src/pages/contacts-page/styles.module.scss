@@ -7,20 +7,22 @@
   margin-left: auto;
   padding: 50px 40px 50px;
   max-width: 1170px;
-  display: flex;
   margin: auto;
   gap: 20px;
   transition:
     gap 0.3s ease,
     padding 0.3s ease;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-@media (max-width: 1330px) {
+@media (max-width: 1040px) {
   .cardList {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 30px 10px;
+    gap: 5px;
+    padding: 0 10px 30px;
   }
 
   .cardItem {
