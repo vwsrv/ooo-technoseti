@@ -6,6 +6,11 @@
   box-sizing: border-box;
   overflow: hidden;
   margin-top: auto;
+
+  @media (max-width: 1300px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .footerColumns {
@@ -33,6 +38,7 @@
   line-height: 1.7;
   max-width: 336px;
   transition: color 0.3s ease;
+
   @media (max-width: 1300px) {
     max-width: 100%;
   }
@@ -83,4 +89,8 @@
   border-top: 2px solid var(--grey-color);
   max-width: 100%;
   padding: 20px 0 20px;
+
+  @media (max-width: 340px) {
+    text-align: center;
+  }
 }

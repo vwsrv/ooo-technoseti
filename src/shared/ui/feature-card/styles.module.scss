@@ -96,7 +96,7 @@
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   .techCard:last-child {
     grid-column: 1/-1;
   }

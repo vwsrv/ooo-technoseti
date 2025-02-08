@@ -1,15 +1,7 @@
 import { HTMLAttributes, DetailedHTMLProps } from 'react';
-
-export interface MenuNavLink {
-  name: string;
-  link: string;
-}
-
-export interface menuLinkWithChildren extends MenuNavLink {
-  children?: MenuNavLink[];
-}
+import { MenuNavLinkProps } from '../menu-nav-link/types';
 
 export interface menuNavigationProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
-  navLinks: MenuNavLink[];
+  navLinks: MenuNavLinkProps[];
 }

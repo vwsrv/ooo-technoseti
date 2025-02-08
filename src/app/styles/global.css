@@ -12,6 +12,7 @@
   --orange-color: #ff8f03;
   --dark-green-color: #1b2c33;
   --almost-black-color: #111422;
+  --lihgt-black-color: #14141c;
 }
 
 body {
@@ -38,6 +39,10 @@ h1 {
   line-height: 1;
   font-weight: 500;
   letter-spacing: 0px;
+
+  @media (max-width: 1040px) {
+    font-size: 36px;
+  }
 }
 
 h2 {
@@ -45,6 +50,10 @@ h2 {
   line-height: 1;
   font-weight: 300;
   letter-spacing: 0px;
+
+  @media (max-width: 1040px) {
+    font-size: 36px;
+  }
 }
 
 h3 {
@@ -52,6 +61,10 @@ h3 {
   line-height: 30px;
   letter-spacing: 0px;
   font-weight: 200;
+
+  @media (max-width: 400px) {
+    font-size: 16px;
+  }
 }
 
 p {
@@ -80,9 +93,17 @@ main {
   margin-left: 300px;
   overflow: hidden;
   min-height: 100vh;
+
+  @media (max-width: 1040px) {
+    margin: 0;
+  }
 }
 
 footer {
   padding-left: 300px;
   background-color: var(--black-color);
+
+  @media (max-width: 1040px) {
+    padding: 0;
+  }
 }

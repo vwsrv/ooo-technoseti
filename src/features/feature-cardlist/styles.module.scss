@@ -1,6 +1,10 @@
 .techCardList {
   max-width: 100%;
 
+  @media (max-width: 400px) {
+    max-width: 320px;
+  }
+
   .techCardListContainer {
     margin: 0;
     padding: 0;
@@ -11,7 +15,7 @@
 
   @media screen and (max-width: 768px) {
     .techCardListContainer {
-      grid-template-columns: repeat(auto-fit, minmax(0, 375px));
+      grid-template-columns: repeat(auto-fit, minmax(0, 340));
       justify-content: center;
     }
   }

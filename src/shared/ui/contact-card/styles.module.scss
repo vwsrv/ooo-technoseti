@@ -22,6 +22,11 @@
 .cardTitle {
   align-self: center;
   padding: 0 30px 0;
+
+  @media (max-width: 1040px) {
+    padding: 0 10px 0;
+    height: auto;
+  }
 }
 
 .cardIcon {
@@ -44,6 +49,11 @@
   background-color: var(--black-color);
   height: 192px;
   line-height: 22px;
+
+  @media (max-width: 1040px) {
+    padding: 40px 10px 40px;
+    height: auto;
+  }
 }
 
 .contactAddress {

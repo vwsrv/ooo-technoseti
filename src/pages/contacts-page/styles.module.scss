@@ -15,35 +15,20 @@
     padding 0.3s ease;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1330px) {
   .cardList {
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
-    padding: 30px 20px;
+    padding: 30px 10px;
   }
-}
 
-.cardsContainer {
-  justify-items: start;
-  align-content: start;
-}
-
-.cardItem {
-  display: flex;
-  max-width: 320px;
-  transition:
-    max-width 0.3s ease,
-    transform 0.3s ease;
-}
-
-@media (max-width: 1024px) {
   .cardItem {
     max-width: 100%;
-    transform: scale(0.95);
+    transform: none;
   }
 
   .cardItem:hover {
-    transform: scale(1);
+    transform: none;
   }
 }

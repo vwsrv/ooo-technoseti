@@ -19,8 +19,7 @@ export const ProductCard: React.FC<typeProductCardProps> = (props) => {
             className={cn(classes.cardImage)}
             src={src ? src : imageNotFound}
             alt={title}
-            height={500}
-            width={800}
+            fill={true}
           />
         </div>
         <div className={cn(classes.cardInfo)}>

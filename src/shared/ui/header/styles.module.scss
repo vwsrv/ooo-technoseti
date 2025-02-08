@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: var(--black-color);
+  transition: height 0.3s ease;
+
+  @media (max-width: 1300px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.imageContainer {
+  position: relative;
+  box-sizing: border-box;
+  width: 391px;
+  height: 99px;
+}

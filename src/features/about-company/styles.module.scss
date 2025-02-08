@@ -5,6 +5,14 @@
   display: flex;
   justify-content: space-around;
   box-sizing: border-box;
+
+  @media (max-width: 1040px) {
+    padding: 150px 10px 150px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 50px 10px 50px;
+  }
 }
 
 .aboutContainer {
@@ -24,6 +32,10 @@
 
 .sectionContent {
   max-width: 1450px;
+
+  @media (max-width: 400px) {
+    max-width: 310px;
+  }
 }
 
 .title {

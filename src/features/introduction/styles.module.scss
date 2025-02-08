@@ -45,6 +45,16 @@
   box-sizing: border-box;
 }
 
+.buttonsContainer {
+  display: flex;
+  gap: 20px;
+
+  @media (max-width: 320px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .introContainer {
   float: left;
   clear: both;
@@ -76,28 +86,26 @@
 
 @media (max-width: 1300px) {
   .introContainer .content {
-    max-width: 500px;
     padding: 0 20px;
   }
 }
 
 @media (max-width: 1040px) {
   .introContainer .content {
-    max-width: 450px;
     padding: 0 15px;
   }
 }
 
 @media (max-width: 768px) {
   .introContainer .content {
-    max-width: 400px;
     padding: 0 10px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   .introContainer .content {
     max-width: 300px;
     padding: 0 5px;
+    text-align: center;
   }
 }

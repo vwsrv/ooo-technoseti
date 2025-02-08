@@ -1,4 +1,6 @@
 .videobox {
+  display: flex;
+  align-items: center;
   cursor: pointer;
   position: relative;
   width: 280px;
@@ -22,7 +24,7 @@
       width: 40px;
       height: 40px;
       left: 7px;
-      top: -7px;
+      top: 2px;
       background-color: inherit;
       z-index: -1;
       pointer-events: none;
@@ -30,6 +32,11 @@
       border-radius: 100%;
       transform: scale(1);
       opacity: 1;
+
+      @media (max-width: 320px) {
+        left: 7px;
+        top: -8px;
+      }
     }
 
     &::before {
@@ -39,10 +46,15 @@
       border-left-color: #ccc;
       border-top-width: 5px;
       border-bottom-width: 5px;
-      top: 11px;
+      top: 20px;
       left: 26px;
       transition: all 0.2s ease;
       z-index: 1;
+
+      @media (max-width: 320px) {
+        top: 9px;
+        left: 27px;
+      }
     }
 
     @keyframes ripple {
