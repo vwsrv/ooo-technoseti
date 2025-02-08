@@ -13,6 +13,26 @@ export const metadata: Metadata = {
   appleWebApp: {
     title: meta.appleMobileWebAppTitle,
   },
+  openGraph: {
+    title: meta.title,
+    description: meta.description,
+    type: 'website',
+    url: 'https://technoseti.ru',
+    images: [
+      {
+        url: 'https://technoseti.ru/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Техно-Сети',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: meta.title,
+    description: meta.description,
+    images: ['https://https://technoseti.ru/twitter-image.jpg'],
+  },
 };
 
 const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
