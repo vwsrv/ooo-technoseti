@@ -7,15 +7,22 @@ import cn from 'classnames';
 import { typeHeaderSectionProps } from './types';
 import classes from './styles.module.scss'; // Импортируем стили
 
+const routeNames = {
+  '': 'Главная',
+  catalog: 'Продукция',
+  objects: 'Объекты',
+  news: 'Новости и статьи',
+  contacts: 'Контакты',
+};
+
 export const HeaderSection: React.FC<typeHeaderSectionProps> = (props) => {
   const pathname = usePathname();
   const pathnames = pathname?.split('/').filter((x) => x) || [];
-  const {
-    startElement = 'Главная',
-    separator = '>',
-    formatPathname = (pathname) => pathname,
-    headerTitle,
-  } = props;
+  const { startElement = 'Главная', separator = '>', headerTitle } = props;
+
+  type RouteNames = keyof typeof routeNames;
+  const formatPathname = (pathname: RouteNames | string) =>
+    routeNames[pathname as RouteNames] || pathname;
 
   return (
     <header className={classes.headerSection}>

@@ -7,17 +7,26 @@
   width: 100%;
   padding-right: 50px;
   box-sizing: border-box;
+
+  @media (max-width: 1040px) {
+    padding: 0;
+  }
 }
 
 .productInfoContainer {
   width: 100%;
 }
+
 .productInfoContent {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   padding: 70px 40px 150px;
   width: 100%;
+
+  @media (max-width: 1040px) {
+    padding: 0 10px 0;
+  }
 }
 .productDescriptionContainer {
   flex-direction: column;
@@ -25,11 +34,19 @@
   width: 100%;
   justify-content: start;
   display: flex;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 .anotherProducts {
   margin: 0 0 33px;
   font-size: 24px;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 .catalogDownloads {
@@ -43,4 +60,8 @@
 .catalogNavBar {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 1040px) {
+    display: none;
+  }
 }
