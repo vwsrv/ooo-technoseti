@@ -3,7 +3,12 @@
 
 # Проект "ООО Техносети"
 
+## PC:
 ![image](https://github.com/user-attachments/assets/73156d29-55b9-43a8-aae8-e6cfdf97395a)
+
+## Mobile:
+![image](https://github.com/user-attachments/assets/a097f357-4b0a-4236-af11-36987fea0633)
+
 
 
 # Описание проекта ООО "Техносети":
