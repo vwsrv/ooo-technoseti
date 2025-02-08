@@ -3,7 +3,8 @@
 
 # Проект "ООО Техносети"
 
-![image](https://github.com/user-attachments/assets/ae2e60db-d9b9-4997-955f-c2992855a727)
+![image](https://github.com/user-attachments/assets/73156d29-55b9-43a8-aae8-e6cfdf97395a)
+
 
 # Описание проекта ООО "Техносети":
 
