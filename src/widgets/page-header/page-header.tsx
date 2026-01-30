@@ -23,8 +23,7 @@ export const PageHeader: FC<typePageHeaderProps> = ({
   const pathname = usePathname();
   const pathnames = pathname?.split('/').filter((x) => x) || [];
 
-  const formatPathname = (segment: string) =>
-    routeNames[segment] ?? segment;
+  const formatPathname = (segment: string) => routeNames[segment] ?? segment;
 
   return (
     <header className={classes.pageHeader}>

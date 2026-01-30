@@ -47,7 +47,10 @@ export const Footer: FC = () => {
         </div>
       </div>
       <div className={cn(classes.footerRowAbout)}>
-        <Link href="https://github.com/vwsrv" className={cn(classes.footerLink)}>
+        <Link
+          href="https://github.com/vwsrv"
+          className={cn(classes.footerLink)}
+        >
           © 2025 ООО «ТЕХНОСЕТИ». Автор: Василий В.
         </Link>
       </div>

@@ -3,7 +3,12 @@
 import { FC } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { SectionHeader, PageHeader, ProductCard, portfolioDataList } from '@/shared';
+import {
+  SectionHeader,
+  PageHeader,
+  ProductCard,
+  portfolioDataList,
+} from '@/shared';
 import { useRouter } from 'next/navigation';
 
 const ObjectsPage: FC = () => {
