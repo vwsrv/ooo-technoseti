@@ -36,7 +36,11 @@
   bottom: -8px;
   height: 6px;
   width: 120px;
-  background: linear-gradient(90deg, var(--blue-color), var(--light-blue-color));
+  background: linear-gradient(
+    90deg,
+    var(--blue-color),
+    var(--light-blue-color)
+  );
   border-radius: 3px;
 }
 
@@ -65,7 +69,9 @@
   background-color: var(--blue-color);
   border-radius: 6px;
   text-decoration: none;
-  transition: background-color 0.2s ease, transform 0.15s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease;
 
   &:hover {
     background-color: var(--light-blue-color);

@@ -4,7 +4,7 @@
   flex-direction: column;
 }
 
-.mainLayoutWrapper:has([data-page="not-found"]) ~ :global(footer) {
+.mainLayoutWrapper:has([data-page='not-found']) ~ :global(footer) {
   display: none !important;
 }
 

@@ -11,7 +11,8 @@ const NotFoundPage: FC = () => (
       <span className={styles.decorLine} aria-hidden />
     </div>
     <p className={styles.title}>
-      Страница не найдена. Возможно, она была удалена или вы перешли по неверной ссылке.
+      Страница не найдена. Возможно, она была удалена или вы перешли по неверной
+      ссылке.
     </p>
     <Link href="/" className={styles.link}>
       На главную
