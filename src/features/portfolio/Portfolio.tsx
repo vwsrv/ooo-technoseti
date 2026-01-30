@@ -2,7 +2,7 @@
 
 import { FC } from 'react';
 import styles from './styles.module.scss';
-import { SectionText, ImageHover, imageOurObject } from '@/shared';
+import { SectionHeader, ImageHover, imageOurObject } from '@/shared';
 import classes from './styles.module.scss';
 import cn from 'classnames';
 import Link from 'next/link';
@@ -18,7 +18,7 @@ export const Portfolio: FC = () => {
     <section className={styles.portfolio}>
       <div className={styles.sectionContent}>
         <div className={styles.sectionTextContainer}>
-          <SectionText
+          <SectionHeader
             title="Наши"
             titleBold="объекты"
             subtitle="В данном разделе представлены некоторые реализованные проекты"

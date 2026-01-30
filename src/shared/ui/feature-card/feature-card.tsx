@@ -6,7 +6,7 @@ import classes from './styles.module.scss';
 import Image from 'next/image';
 import { typeFeatureCardProps } from './types';
 import techCardLogo from '../../images/main-logo/logo-short-white.svg';
-import { ArrowRight } from '@/shared';
+import { ArrowButton } from '@/shared';
 
 export const FeatureCard: FC<typeFeatureCardProps> = ({ cardItemData }) => {
   return (
@@ -33,7 +33,7 @@ export const FeatureCard: FC<typeFeatureCardProps> = ({ cardItemData }) => {
       <div className={cn(classes.techCardContainer)}>
         <h3 className={cn(classes.techCardName)}>{cardItemData.name}</h3>
         <p className="description">{cardItemData.description}</p>
-        <ArrowRight variant="default" disabled={false} />
+        <ArrowButton variant="default" disabled={false} />
       </div>
     </li>
   );

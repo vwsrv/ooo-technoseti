@@ -6,7 +6,7 @@ import {
   AboutCompany,
   OurFeatures,
   Portfolio,
-  Sertificats,
+  Certificates,
 } from '@/features';
 
 const MainPage: FC = () => {
@@ -17,7 +17,7 @@ const MainPage: FC = () => {
       <AboutCompany />
       <Advantages />
       <OurFeatures />
-      <Sertificats />
+      <Certificates />
       <Portfolio />
     </div>
   );

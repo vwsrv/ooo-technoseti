@@ -10,22 +10,22 @@ export { Header } from './ui/header';
 export { HeaderSection } from './ui/header-section/header-section';
 export { ProductCard } from './ui/product-card';
 export { ProductCardTypeSmall } from './ui/product-card-type-small';
-export { ProductCardInfo } from './ui/product-card-info';
+export { InfoCard } from './ui/info-card';
 export { CatalogLink } from './ui/catalog-link';
 export { CatalogNavBar } from './ui/catalog-navbar';
 export { DocumentLink } from './ui/document-link';
-export { SectionText } from './ui/section-text';
+export { SectionHeader } from './ui/section-header';
 export { ContactCard } from './ui/contact-card';
 export { MenuNavList } from './ui/menu-navigation-list';
 export { CompanyLogo } from './ui/company-logo/company-logo';
 export { MenuNavLink } from './ui/menu-nav-link/menu-nav-link';
-export { ButtonComponent } from './ui/button-component';
+export { Button } from './ui/button';
 export { ImageHover } from './ui/image-hover';
 export { ImageWithEffects } from './ui/image-with-effects';
 export { Advantage } from './ui/advantage/advantage';
 export { FeatureCard } from './ui/feature-card';
-export { ArrowRight } from './ui/arrow-component';
-export { VideoBox } from './ui/video-box';
+export { ArrowButton } from './ui/arrow-button';
+export { VideoButton } from './ui/video-button';
 
 export { useMediaQuery } from './lib/useMediaQuery';
 

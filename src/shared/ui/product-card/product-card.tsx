@@ -5,7 +5,7 @@ import Image from 'next/image';
 import classes from './styles.module.scss';
 import cn from 'classnames';
 import { typeProductCardProps } from './types';
-import { ButtonComponent } from '../button-component/button-component';
+import { Button } from '@/shared/ui/button/button';
 import { imageNotFound } from '../../constants/not-found-image-link';
 
 export const ProductCard: FC<typeProductCardProps> = ({
@@ -28,9 +28,9 @@ export const ProductCard: FC<typeProductCardProps> = ({
         <h3 className={cn(classes.cardTitle)}>{title}</h3>
         <p className={cn(classes.cardDescription)}>{description}</p>
       </div>
-      <ButtonComponent disabled={false} variant="pink" onClick={onClick}>
+      <Button disabled={false} variant="pink" onClick={onClick}>
         Читать далее
-      </ButtonComponent>
+      </Button>
     </div>
   </article>
 );

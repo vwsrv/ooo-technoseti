@@ -5,7 +5,7 @@ import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeSectionTextProps } from './types';
 
-export const SectionText: FC<typeSectionTextProps> = ({
+export const SectionHeader: FC<typeSectionTextProps> = ({
   variant = 'pink',
   title,
   titleBold,

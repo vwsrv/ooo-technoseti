@@ -7,12 +7,12 @@ import {
   imageNotFound,
   HeaderSection,
   ProductCardTypeSmall,
-  ProductCardInfo,
+  InfoCard,
   CatalogLink,
   CatalogNavBar,
   productDescription,
   DocumentLink,
-  SectionText,
+  SectionHeader,
 } from '@/shared';
 import { useRouter, useParams } from 'next/navigation';
 
@@ -53,7 +53,7 @@ const ProductDescription: FC = () => {
       <div className={cn(classes.productInfoContent)}>
         <div className={cn(classes.productInfoHolder)}>
           <div className={cn(classes.productInfoContainer)}>
-            <ProductCardInfo
+            <InfoCard
               title={product.title}
               description={product.description}
               src={product.image ? product.image : imageNotFound}
@@ -82,7 +82,7 @@ const ProductDescription: FC = () => {
             ))}
           </CatalogNavBar>
           <div className={cn(classes.catalogDownloads)}>
-            <SectionText variant="orange" title="Полезные материалы:" />
+            <SectionHeader variant="orange" title="Полезные материалы:" />
             <DocumentLink variant="doc" title="Буклет о компании .DOC" />
             <DocumentLink variant="zip" title="Скачать .ZIP" />
             <DocumentLink variant="pdf" title="Скачать .PDF" />

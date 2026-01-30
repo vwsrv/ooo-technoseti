@@ -5,7 +5,7 @@ import { typeVideoBoxProps } from './types';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 
-export const VideoBox: FC<typeVideoBoxProps> = ({
+export const VideoButton: FC<typeVideoBoxProps> = ({
   onClick,
   children,
   disabled,

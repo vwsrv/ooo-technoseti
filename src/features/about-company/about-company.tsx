@@ -3,7 +3,7 @@
 import { FC } from 'react';
 import classes from './styles.module.scss';
 import {
-  SectionText,
+  SectionHeader,
   imageForWhiteBgLogoShort,
   ImageWithEffects,
 } from '@/shared';
@@ -15,7 +15,7 @@ export const AboutCompany: FC = () => {
     <section className={classes.about}>
       <div className={classes.aboutContainer}>
         <div className={classes.sectionContent}>
-          <SectionText
+          <SectionHeader
             variant="black"
             title="Компания"
             titleBold="ТЕХНОСЕТИ"

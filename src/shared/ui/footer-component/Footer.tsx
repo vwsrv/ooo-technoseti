@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { SectionText } from '../section-text';
+import { SectionHeader } from '../section-header';
 import Link from 'next/link';
 
 export const Footer: FC = () => {
@@ -28,14 +28,14 @@ export const Footer: FC = () => {
     <footer className={cn(classes.footer)}>
       <div className={cn(classes.footerColumns)}>
         <div className={cn(classes.footerColumnDescription)}>
-          <SectionText title="Комплексный инжиниринг" variant="orange" />
+          <SectionHeader title="Комплексный инжиниринг" variant="orange" />
           <p>
             Современные инженерные решения для систем водоснабжения,
             теплоснабжения, электрификации и водоотведения.
           </p>
         </div>
         <div className={cn(classes.footerColumnSchedule)}>
-          <SectionText title="Время работы" variant="orange" />
+          <SectionHeader title="Время работы" variant="orange" />
           <div className={cn(classes.workDays)}>
             <p>Понедельник - Пятница</p>
             <p className={cn(classes.typeOrange)}>С 9:00 до 17:00</p>
@@ -50,7 +50,7 @@ export const Footer: FC = () => {
           </div>
         </div>
         <div className={cn(classes.footerColumnLinks)}>
-          <SectionText title="Быстрые ссылки" variant="orange" />
+          <SectionHeader title="Быстрые ссылки" variant="orange" />
           {footerLinks.map((item, key) => (
             <Link href={item.link} className={cn(classes.footerLink)} key={key}>
               {item.title}

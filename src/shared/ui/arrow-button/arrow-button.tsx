@@ -5,7 +5,7 @@ import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeArrowProps } from './types';
 
-export const ArrowRight: FC<typeArrowProps> = ({ disabled, variant }) => {
+export const ArrowButton: FC<typeArrowProps> = ({ disabled, variant }) => {
   return (
     <button
       disabled={disabled}

@@ -2,7 +2,7 @@
 
 import { FC } from 'react';
 import styles from './styles.module.scss';
-import { SectionText } from '@/shared';
+import { SectionHeader } from '@/shared';
 import { FeatureCardList } from '@/features';
 
 export const OurFeatures: FC = () => {
@@ -26,7 +26,7 @@ export const OurFeatures: FC = () => {
     <section className={styles.ourFeatures}>
       <div className={styles.sectionContent}>
         <div className={styles.sectionTitle}>
-          <SectionText
+          <SectionHeader
             variant="blue"
             title="Комплексный"
             titleBold="инжиниринг"

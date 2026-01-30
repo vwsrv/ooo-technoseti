@@ -1,7 +1,7 @@
 FROM node:20-alpine AS deps
 WORKDIR /app
-COPY package.json package-lock.json* yarn.lock* ./
-RUN corepack enable yarn && yarn install --frozen-lockfile || npm ci
+COPY package.json package-lock.json ./
+RUN npm ci
 
 FROM node:20-alpine AS builder
 WORKDIR /app
@@ -10,7 +10,7 @@ COPY . .
 
 ENV NEXT_PRIVATE_STANDALONE=1
 
-RUN corepack enable yarn && yarn build || npm run build
+RUN npm run build
 
 FROM node:20-alpine AS runner
 WORKDIR /app

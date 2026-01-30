@@ -6,7 +6,7 @@ import cn from 'classnames';
 import { typeProductCardInfoProps } from './types';
 import Image from 'next/image';
 
-export const ProductCardInfo: FC<typeProductCardInfoProps> = ({
+export const InfoCard: FC<typeProductCardInfoProps> = ({
   title,
   description,
   src,

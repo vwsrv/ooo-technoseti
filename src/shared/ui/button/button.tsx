@@ -5,7 +5,7 @@ import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeButtonProps } from './types';
 
-export const ButtonComponent: FC<typeButtonProps> = ({
+export const Button: FC<typeButtonProps> = ({
   variant = 'pink',
   children,
   disabled,
