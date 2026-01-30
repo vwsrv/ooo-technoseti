@@ -13,32 +13,6 @@ const ImagePopup: React.FC<typeImagePopupProps> = (props) => {
   const [animationDirection, setAnimationDirection] = useState<
     'left' | 'right' | null
   >(null);
-  useEffect(() => {
-    if (!isMounted) {
-      setIsClosing(false);
-    }
-  }, [isMounted]);
-
-  useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        handleClose();
-      } else if (event.key === 'ArrowLeft') {
-        goToPrevious();
-      } else if (event.key === 'ArrowRight') {
-        goToNext();
-      }
-    };
-
-    if (isMounted) {
-      window.addEventListener('keydown', handleKeyDown);
-    }
-
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [isMounted, currentIndex]);
-
   const handleClose = () => {
     setIsClosing(true);
     setTimeout(() => {
@@ -69,6 +43,26 @@ const ImagePopup: React.FC<typeImagePopupProps> = (props) => {
       setIsAnimating(false);
     }, 300);
   };
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        handleClose();
+      } else if (event.key === 'ArrowLeft') {
+        goToPrevious();
+      } else if (event.key === 'ArrowRight') {
+        goToNext();
+      }
+    };
+
+    if (isMounted) {
+      window.addEventListener('keydown', handleKeyDown);
+    }
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isMounted, currentIndex]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (!isMounted) return null;
 

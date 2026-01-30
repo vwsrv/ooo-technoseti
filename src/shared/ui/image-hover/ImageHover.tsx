@@ -10,6 +10,7 @@ export const ImageHover: React.FC<typeImageHoverProps> = (props) => {
   return (
     <div className={cn(classes.imageHoverContainer)}>
       <div className={cn(classes.imageWrapper)}>
+        {/* eslint-disable-next-line @next/next/no-img-element -- hover/overlay UX, src может быть внешним */}
         <img
           src={imageUrl ? imageUrl : imageNotFound}
           alt={title}

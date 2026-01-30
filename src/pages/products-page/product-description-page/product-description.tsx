@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useMemo } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { imageNotFound } from '@/shared/constants/not-found-image-link';
@@ -20,6 +20,17 @@ const ProductDescription: React.FC = () => {
   const router = useRouter();
   const id = params?.id ? Number(params.id) : null;
 
+  const randomProducts = useMemo(() => {
+    if (id === null) return [];
+    const filtered = productDescription.filter((item) => item.id !== id);
+    const shuffled = [...filtered];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = (id * (i + 1)) % (i + 1);
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled.slice(0, 2);
+  }, [id]);
+
   if (id === null) {
     return <div>Ошибка: ID товара не указан</div>;
   }
@@ -34,9 +45,6 @@ const ProductDescription: React.FC = () => {
     router.push(`/catalog/${id}`);
   };
   const filteredProducts = productDescription.filter((item) => item.id !== id);
-  const randomProducts = filteredProducts
-    .sort(() => 0.5 - Math.random())
-    .slice(0, 2);
 
   return (
     <div className={cn(classes.productDescriptionPage)}>
