@@ -4,6 +4,10 @@ import './styles/global.css';
 import { montserrat, roboto } from '@/app/fonts/fonts';
 import { metaData as meta } from '@/shared';
 import { Metadata } from 'next';
+import { Footer, SidebarNav } from '@/widgets';
+import { HeaderNavigation } from '@/features';
+import { PageWrapper } from './page-wrapper';
+import layoutClasses from './styles/layout.module.scss';
 
 export const metadata: Metadata = {
   title: meta.title,
@@ -38,7 +42,16 @@ export const metadata: Metadata = {
 const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="ru" className={`${montserrat.variable} ${roboto.variable}`}>
-      <body>{children}</body>
+      <body>
+        <HeaderNavigation />
+        <SidebarNav />
+        <div className={layoutClasses.mainLayoutWrapper}>
+          <main>
+            <PageWrapper>{children}</PageWrapper>
+          </main>
+        </div>
+        <Footer />
+      </body>
     </html>
   );
 };

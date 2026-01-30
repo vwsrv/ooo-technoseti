@@ -1,11 +1,6 @@
-export { Navigation } from './navigation';
 export { default as HeaderNavigation } from './header-navigation/header-navigation';
-export { Introduction } from './introduction/introduction';
-export { Advantages } from './advantages/advantages';
-export { AboutCompany } from './about-company/about-company';
-export { OurFeatures } from './our-features';
-export { Portfolio } from './portfolio';
-export { Certificates } from './certificates';
-export { default as ImagePopup } from './popup-form-image/image-popup';
 export { FeatureCardList } from './feature-cardlist';
+export { ObjectsList } from './objects-list';
+export { ObjectDescription } from './object-description';
+export { CatalogList } from './catalog-list';
 export type { TechCardProps } from './feature-cardlist/types';

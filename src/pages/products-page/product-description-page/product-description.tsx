@@ -10,7 +10,6 @@ import {
   ProductCardTypeSmall,
   InfoCard,
   CatalogLink,
-  Navbar,
   productDescription,
   DocumentLink,
 } from '@/shared';
@@ -56,7 +55,7 @@ const ProductDescription: FC = () => {
             <InfoCard
               title={product.title}
               description={product.description}
-              src={product.image ? product.image : imageNotFound}
+              src={product.image || imageNotFound}
             />
           </div>
           <h3 className={cn(classes.anotherProducts)}>Другое оборудование</h3>
@@ -72,7 +71,7 @@ const ProductDescription: FC = () => {
           </div>
         </div>
         <div className={cn(classes.catalogNavBar)}>
-          <Navbar>
+          <div className={cn(classes.navBarBlock)}>
             {filteredProducts.map((item) => (
               <CatalogLink
                 key={item.id}
@@ -80,7 +79,7 @@ const ProductDescription: FC = () => {
                 name={item.title}
               />
             ))}
-          </Navbar>
+          </div>
           <div className={cn(classes.catalogDownloads)}>
             <SectionHeader variant="orange" title="Полезные материалы:" />
             <DocumentLink variant="doc" title="Буклет о компании .DOC" />

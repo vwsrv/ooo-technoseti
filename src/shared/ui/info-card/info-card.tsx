@@ -5,6 +5,7 @@ import classes from './styles.module.scss';
 import cn from 'classnames';
 import { typeProductCardInfoProps } from './types';
 import Image from 'next/image';
+import { imageNotFound } from '@/shared';
 
 export const InfoCard: FC<typeProductCardInfoProps> = ({
   title,
@@ -13,7 +14,7 @@ export const InfoCard: FC<typeProductCardInfoProps> = ({
 }) => (
   <div className={cn(classes.cardInfo)}>
     <div className={cn(classes.imageContainer)}>
-      <Image src={src} alt={title} fill={true} />
+      <Image src={src || imageNotFound} alt={title} fill={true} />
     </div>
     <div className={cn(classes.cardInfoContainer)}>
       <div className={cn(classes.cardInfo)}>

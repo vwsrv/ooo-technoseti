@@ -3,6 +3,11 @@
   padding: 40px 20px 20px;
   box-sizing: border-box;
   font-family: inherit;
+  margin-left: 300px;
+
+  @media (max-width: 1040px) {
+    margin-left: 0;
+  }
 }
 
 .footerColumns {

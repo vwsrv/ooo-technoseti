@@ -3,54 +3,42 @@
 import { FC } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { ContactCard, SectionHeader, PageHeader } from '@/shared';
-import officeImage from '../../../public/for-contactsPage/office.jpg';
-import skladImage from '../../../public/for-contactsPage/sklad.jpg';
+import { ContactCard, PageHeader } from '@/shared';
 
-const ContactsPage: FC = () => {
-  const myContacts = [
-    {
-      src: officeImage,
-      title: ' г. Москва. Центральный офис',
-      address:
-        'муниципальный округ Басманный, переулок Яковоапостольский, д. 17, помещ. 1/П',
-      tel: '+7 (916) 776-90-02',
-      email: 'info@technoseti.ru',
-    },
-    {
-      src: skladImage,
-      imageLink: 'string',
-      title: 'Склад в Мос. области',
-      address: '142601, г. Орехово-Зуево, улица Торфобрикетная, дом 19',
-      tel: '+7 (916) 776-90-02',
-    },
-    {
-      src: skladImage,
-      imageLink: 'string',
-      title: 'Склад в г. Краснодар',
-      address: '350039, г. Краснодар, Майский проезд, д. 3',
-      tel: '+7 (916) 776-90-02',
-    },
-  ];
+const officeImage = '/for-contactsPage/office.jpg';
+const skladImage = '/for-contactsPage/sklad.jpg';
 
-  return (
-    <div className={cn(classes.contactsPage)}>
-      <PageHeader headerTitle="Контакты" />
-      <div className={cn(classes.cardList)}>
-        {myContacts.map((item, index) => (
-          <div key={index} className={cn(classes.cardItem)}>
-            <ContactCard
-              title={item.title}
-              src={item.src}
-              address={item.address}
-              email={item.email}
-              tel={item.tel}
-            />
-          </div>
-        ))}
+const ContactsPage: FC = () => (
+  <div className={cn(classes.contactsPage)}>
+    <PageHeader headerTitle="Контакты" />
+    <div className={cn(classes.cardList)}>
+      <div className={cn(classes.cardItem)}>
+        <ContactCard
+          title="г. Москва. Центральный офис"
+          src={officeImage}
+          address="муниципальный округ Басманный, переулок Яковоапостольский, д. 17, помещ. 1/П"
+          tel="+7 (916) 776-90-02"
+          email="info@technoseti.ru"
+        />
+      </div>
+      <div className={cn(classes.cardItem)}>
+        <ContactCard
+          title="Склад в Мос. области"
+          src={skladImage}
+          address="142601, г. Орехово-Зуево, улица Торфобрикетная, дом 19"
+          tel="+7 (916) 776-90-02"
+        />
+      </div>
+      <div className={cn(classes.cardItem)}>
+        <ContactCard
+          title="Склад в г. Краснодар"
+          src={skladImage}
+          address="350039, г. Краснодар, Майский проезд, д. 3"
+          tel="+7 (916) 776-90-02"
+        />
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 export default ContactsPage;

@@ -1,0 +1,77 @@
+// Navigation (menuBar)
+.menuBar {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  top: 0;
+  height: 100vh;
+  background-color: var(--black-color);
+  overflow-y: auto;
+  z-index: 1000000;
+
+  @media (max-width: 1040px) {
+    display: none;
+  }
+}
+
+.menuBarLine {
+  min-height: 1px;
+}
+
+// Company logo block
+.logoContainer {
+  width: 100%;
+  float: left;
+  clear: both;
+  position: relative;
+  padding: 30px 60px;
+  background-color: #111119;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  margin-bottom: 64px;
+}
+
+.logoImage {
+  width: 200px;
+  height: 168px;
+}
+
+.logoLine {
+  position: absolute;
+  top: 100%;
+  left: 70px;
+  right: 70px;
+  height: 14px;
+  background-color: #111119;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
+
+  ::before {
+    border-top: 14px solid #111119;
+    border-right: 10px solid transparent;
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 0px;
+  }
+
+  ::after {
+    border-top: 14px solid #111119;
+    border-left: 10px solid transparent;
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0px;
+  }
+}
+
+// Nav list wrapper
+.menuNavigation {
+  // MenuNavLink from shared provides item styles
+}
+
+.menuWrapper {
+  padding: 0;
+  max-width: 179px;
+  margin: auto;
+}

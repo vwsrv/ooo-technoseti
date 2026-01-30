@@ -1,0 +1,82 @@
+.objectDescriptionPage {
+  max-width: 1170px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.content {
+  box-sizing: border-box;
+  padding: 70px 40px 150px;
+  width: 100%;
+
+  @media (max-width: 1040px) {
+    padding: 0 10px;
+  }
+}
+
+.imageList {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 8px;
+
+  &::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+  }
+}
+
+.imageContainer {
+  position: relative;
+  flex-shrink: 0;
+  width: 400px;
+  min-height: 250px;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    width: 280px;
+    min-height: 180px;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+}
+
+.objectTextContainer {
+  padding: 70px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.objectText {
+  margin: 0;
+}
+
+.objectTitle {
+  margin: 0 0 24px;
+}
+
+.objectSubTitle {
+  margin: 0;
+}

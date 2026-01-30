@@ -9,7 +9,6 @@ export { ProductCard } from './ui/product-card';
 export { ProductCardTypeSmall } from './ui/product-card-type-small';
 export { InfoCard } from './ui/info-card';
 export { CatalogLink } from './ui/catalog-link';
-export { Navbar } from '../widgets/navbar';
 export { Footer } from '../widgets/footer';
 export { PageHeader } from '../widgets/page-header';
 export { DocumentLink } from './ui/document-link';
@@ -25,6 +24,8 @@ export { Advantage } from './ui/advantage/advantage';
 export { FeatureCard } from './ui/feature-card';
 export { ArrowButton } from './ui/arrow-button';
 export { VideoButton } from './ui/video-button';
+export { Popup } from './ui/popup';
+export { ImagePopup } from './ui/image-popup';
 
 export { useMediaQuery } from './lib/useMediaQuery';
 
