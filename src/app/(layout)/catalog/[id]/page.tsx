@@ -1,10 +1,10 @@
 'use client';
 
-import React from 'react';
+import { FC } from 'react';
 import ProductDescription from '@/pages/products-page/product-description-page/product-description';
 import classes from './styles.module.scss';
 
-const ItemDescription: React.FC = () => {
+const ItemDescription: FC = () => {
   return (
     <main>
       <div className={classes.layout}>

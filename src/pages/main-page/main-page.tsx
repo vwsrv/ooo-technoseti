@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 import classes from './index.module.scss';
 import {
   Introduction,
@@ -9,7 +9,7 @@ import {
   Sertificats,
 } from '@/features';
 
-const MainPage: React.FC = () => {
+const MainPage: FC = () => {
   return (
     <div className={classes.mainPage}>
       <Introduction />

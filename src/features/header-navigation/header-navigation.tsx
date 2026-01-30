@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import { FC, useState } from 'react';
 import {
   Header,
   menuNavData,
@@ -11,7 +11,7 @@ import {
 import cn from 'classnames';
 import classes from './styles.module.scss';
 
-const HeaderNavigation: React.FC = () => {
+const HeaderNavigation: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {

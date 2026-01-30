@@ -1,9 +1,9 @@
-import React from 'react';
+import { FC } from 'react';
 import ObjectsPage from '@/pages/objects-page/objects-page';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 
-const CatalogPage: React.FC = () => {
+const CatalogPage: FC = () => {
   return (
     <main>
       <div className={cn(classes.layout)}>

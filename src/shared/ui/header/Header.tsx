@@ -1,15 +1,18 @@
 'use client';
 
-import React from 'react';
+import { FC } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import Image from 'next/image';
 import { typeHeaderProps } from './types';
 import { useRouter } from 'next/navigation';
 
-export const Header: React.FC<typeHeaderProps> = (props) => {
-  const { headerLogo, children, headerAlt, style } = props;
-
+export const Header: FC<typeHeaderProps> = ({
+  headerLogo,
+  children,
+  headerAlt,
+  style,
+}) => {
   const router = useRouter();
   const handleNavigate = () => {
     router.push('/');

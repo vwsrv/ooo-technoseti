@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC, PropsWithChildren } from 'react';
 import './styles/normalize.css';
 import './styles/global.css';
 import { montserrat, roboto } from '@/app/fonts/fonts';
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
 };
 
-const RootLayout: React.FC<React.PropsWithChildren> = ({ children }) => {
+const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="ru" className={`${montserrat.variable} ${roboto.variable}`}>
       <body>{children}</body>

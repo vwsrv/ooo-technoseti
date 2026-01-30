@@ -1,10 +1,11 @@
 'use client';
 
+import { FC } from 'react';
 import styles from './styles.module.scss';
 import { SectionText } from '@/shared';
 import { FeatureCardList } from '@/features';
 
-export const OurFeatures: React.FC = () => {
+export const OurFeatures: FC = () => {
   const techCardData = [
     {
       name: 'Проектирование',

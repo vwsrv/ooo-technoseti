@@ -1,13 +1,11 @@
 'use client';
 
-import React from 'react';
+import { FC } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeAdvantageProps } from './types';
 
-export const Advantage: React.FC<typeAdvantageProps> = (props) => {
-  const { title, subtitle } = props;
-
+export const Advantage: FC<typeAdvantageProps> = ({ title, subtitle }) => {
   return (
     <div className={cn(classes.checkBox)}>
       <span className={cn(classes.icon)}></span>

@@ -1,10 +1,11 @@
 'use client';
 
+import { FC } from 'react';
 import classes from './styles.module.scss';
 import { SectionText, VideoBox, ButtonComponent } from '@/shared';
 import { useRouter } from 'next/navigation';
 
-export const Introduction: React.FC = () => {
+export const Introduction: FC = () => {
   const router = useRouter();
   const handleNavigate = () => {
     router.push('/catalog');

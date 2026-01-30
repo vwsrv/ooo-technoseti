@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import { FC } from 'react';
 import classes from './styles.module.scss';
 import {
   SectionText,
@@ -10,7 +10,7 @@ import {
 import Image from 'next/image';
 import cn from 'classnames';
 
-export const AboutCompany: React.FC = () => {
+export const AboutCompany: FC = () => {
   return (
     <section className={classes.about}>
       <div className={classes.aboutContainer}>

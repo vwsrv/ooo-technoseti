@@ -1,7 +1,7 @@
-import React from 'react';
+import { FC } from 'react';
 import MainPage from '@/pages/main-page/main-page';
 
-const HomePage: React.FC = () => {
+const HomePage: FC = () => {
   return (
     <main>
       <MainPage />

@@ -1,11 +1,11 @@
 'use client';
 
-import React from 'react';
+import { FC } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { Advantage } from '@/shared';
 
-export const Advantages: React.FC = () => {
+export const Advantages: FC = () => {
   const checkBoxData = [
     {
       title: 'Поставка в день обращения',

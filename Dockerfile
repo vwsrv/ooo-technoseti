@@ -7,6 +7,9 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+
+ENV NEXT_PRIVATE_STANDALONE=1
+
 RUN corepack enable yarn && yarn build || npm run build
 
 FROM node:20-alpine AS runner

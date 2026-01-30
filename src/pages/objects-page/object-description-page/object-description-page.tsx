@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import { FC, useState } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { imageNotFound, portfolioDataList } from '@/shared';
@@ -8,12 +8,10 @@ import { ImagePopup } from '@/features';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
 
-const ObjectDescriptionPage: React.FC = () => {
+const ObjectDescriptionPage: FC = () => {
   const params = useParams();
-  const [isPopupOpen, setIsOpen] = React.useState(false);
-  const [currentImageUrl, setCurrentImageUrl] = React.useState<string | null>(
-    null
-  );
+  const [isPopupOpen, setIsOpen] = useState(false);
+  const [currentImageUrl, setCurrentImageUrl] = useState<string | null>(null);
 
   if (!params || typeof params.id !== 'string') {
     return <div>Объект не найден</div>;

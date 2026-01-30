@@ -1,14 +1,18 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import { FC, useState, useEffect } from 'react';
 import Image from 'next/image';
 import classes from './styles.module.scss';
 import { typeImagePopupProps } from './types';
 import { createPortal } from 'react-dom';
 import { imageNotFound } from '@/shared';
 
-const ImagePopup: React.FC<typeImagePopupProps> = (props) => {
-  const { images, initialIndex = 0, onClose, isMounted } = props;
+const ImagePopup: FC<typeImagePopupProps> = ({
+  images,
+  initialIndex = 0,
+  onClose,
+  isMounted,
+}) => {
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const [isClosing, setIsClosing] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);

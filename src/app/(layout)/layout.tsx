@@ -1,10 +1,10 @@
-import React from 'react';
+import { FC, PropsWithChildren } from 'react';
 import { Footer } from '@/shared';
 import { Navigation, HeaderNavigation } from '@/features';
 import classes from './styles.module.scss';
 import cn from 'classnames';
 
-const MainLayout: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
+const MainLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <div className={classes.mainLayout}>
       <HeaderNavigation />

@@ -1,9 +1,9 @@
 export { imageNotFound } from './constants/not-found-image-link';
 export { metaData } from './constants/metadata';
-export { menuNavData } from './constants/menuNavigationData';
+export { menuNavData } from './constants/menu-navigation-data';
 export { default as portfolioDataList } from './constants/portfolio';
 export { default as productsDataList } from './constants/products';
-export { default as productDescription } from './constants/proructDescription';
+export { default as productDescription } from './constants/product-description';
 
 export { Footer } from './ui/footer-component';
 export { Header } from './ui/header';

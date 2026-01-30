@@ -1,10 +1,10 @@
 'use client';
 
-import React from 'react';
+import { FC } from 'react';
 import { MenuNavList, CompanyLogo, menuNavData } from '@/shared';
 import styles from './index.module.scss';
 
-export const Navigation: React.FC = () => {
+export const Navigation: FC = () => {
   return (
     <div className={styles.menuBar}>
       <CompanyLogo />

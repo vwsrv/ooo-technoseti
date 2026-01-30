@@ -1,12 +1,12 @@
 'use client';
 
-import React, { useRef, useEffect } from 'react';
+import { FC, useRef, useEffect } from 'react';
 import classes from './styles.module.scss';
 import cn from 'classnames';
 import imageForComponent from '../../images/for-imageWithEffects/for-imageWithEffecits.jpeg';
 import Image from 'next/image';
 
-export const ImageWithEffects: React.FC = () => {
+export const ImageWithEffects: FC = () => {
   const imageRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

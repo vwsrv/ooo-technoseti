@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useMemo } from 'react';
+import { FC, useMemo } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import {
@@ -16,7 +16,7 @@ import {
 } from '@/shared';
 import { useRouter, useParams } from 'next/navigation';
 
-const ProductDescription: React.FC = () => {
+const ProductDescription: FC = () => {
   const params = useParams();
   const router = useRouter();
   const id = params?.id ? Number(params.id) : null;

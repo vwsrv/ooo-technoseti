@@ -1,10 +1,10 @@
-import React from 'react';
+import { FC } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { SectionText } from '../section-text';
 import Link from 'next/link';
 
-export const Footer: React.FC = () => {
+export const Footer: FC = () => {
   const footerLinks = [
     {
       title: 'Трубы PETRIX',

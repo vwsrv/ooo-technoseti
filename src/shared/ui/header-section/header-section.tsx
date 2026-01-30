@@ -1,11 +1,11 @@
 'use client';
 
-import React from 'react';
+import { FC, Fragment } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import cn from 'classnames';
 import { typeHeaderSectionProps } from './types';
-import classes from './styles.module.scss'; // Импортируем стили
+import classes from './styles.module.scss';
 
 const routeNames = {
   '': 'Главная',
@@ -15,10 +15,13 @@ const routeNames = {
   contacts: 'Контакты',
 };
 
-export const HeaderSection: React.FC<typeHeaderSectionProps> = (props) => {
+export const HeaderSection: FC<typeHeaderSectionProps> = ({
+  startElement = 'Главная',
+  separator = '>',
+  headerTitle,
+}) => {
   const pathname = usePathname();
   const pathnames = pathname?.split('/').filter((x) => x) || [];
-  const { startElement = 'Главная', separator = '>', headerTitle } = props;
 
   type RouteNames = keyof typeof routeNames;
   const formatPathname = (pathname: RouteNames | string) =>
@@ -38,7 +41,7 @@ export const HeaderSection: React.FC<typeHeaderSectionProps> = (props) => {
           const routeTo = `/${pathnames.slice(0, index + 1).join('/')}`;
 
           return (
-            <React.Fragment key={pathname}>
+            <Fragment key={pathname}>
               <span className={classes.headerSectionSeparator}>
                 {separator}
               </span>
@@ -61,7 +64,7 @@ export const HeaderSection: React.FC<typeHeaderSectionProps> = (props) => {
                   </span>
                 </Link>
               )}
-            </React.Fragment>
+            </Fragment>
           );
         })}
       </div>

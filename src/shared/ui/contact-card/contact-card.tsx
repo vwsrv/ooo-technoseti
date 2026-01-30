@@ -1,15 +1,19 @@
 'use client';
 
-import React from 'react';
+import { FC } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeContactCardProps } from './types';
 import Image from 'next/image';
 import { imageNotFound } from '../../constants/not-found-image-link';
 
-export const ContactCard: React.FC<typeContactCardProps> = (props) => {
-  const { src, title, address, tel, email } = props;
-
+export const ContactCard: FC<typeContactCardProps> = ({
+  src,
+  title,
+  address,
+  tel,
+  email,
+}) => {
   return (
     <div className={cn(classes.cardContent)}>
       <Image

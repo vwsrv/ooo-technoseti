@@ -1,16 +1,14 @@
 'use client';
 
-import React from 'react';
+import { FC } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import Image from 'next/image';
 import { typeFeatureCardProps } from './types';
-import { ArrowRight } from '../arrow-component/arrow-right';
 import techCardLogo from '../../images/main-logo/logo-short-white.svg';
+import { ArrowRight } from '@/shared';
 
-export const FeatureCard: React.FC<typeFeatureCardProps> = (props) => {
-  const { cardItemData } = props;
-
+export const FeatureCard: FC<typeFeatureCardProps> = ({ cardItemData }) => {
   return (
     <li className={cn(classes.techCard)}>
       <span className={cn(classes.techCardLogoHolder)}>

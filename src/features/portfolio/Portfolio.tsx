@@ -1,5 +1,6 @@
 'use client';
 
+import { FC } from 'react';
 import styles from './styles.module.scss';
 import { SectionText, ImageHover, imageOurObject } from '@/shared';
 import classes from './styles.module.scss';
@@ -7,7 +8,7 @@ import cn from 'classnames';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
-export const Portfolio: React.FC = () => {
+export const Portfolio: FC = () => {
   const router = useRouter();
   const handleNavigate = () => {
     router.push('/objects');

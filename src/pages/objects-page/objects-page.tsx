@@ -1,12 +1,12 @@
 'use client';
 
-import React from 'react';
+import { FC } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { HeaderSection, ProductCard, portfolioDataList } from '@/shared';
 import { useRouter } from 'next/navigation';
 
-const ObjectsPage: React.FC = (props) => {
+const ObjectsPage: FC = () => {
   const router = useRouter();
   const handleCardClick = (id: number) => {
     if (id) {
