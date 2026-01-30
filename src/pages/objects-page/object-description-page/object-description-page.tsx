@@ -3,11 +3,10 @@
 import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import ImagePopup from '@/features/popup-form-image/ImagePopup';
+import { imageNotFound, portfolioDataList } from '@/shared';
+import { ImagePopup } from '@/features';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
-import dataList from '@/shared/constants/portfolio';
-import { imageNotFound } from '@/shared/constants/not-found-image-link';
 
 const ObjectDescriptionPage: React.FC = () => {
   const params = useParams();
@@ -21,7 +20,9 @@ const ObjectDescriptionPage: React.FC = () => {
   }
 
   const { id } = params;
-  const currentObject = dataList.find((item) => item.id === Number(id));
+  const currentObject = portfolioDataList.find(
+    (item) => item.id === Number(id)
+  );
 
   if (!currentObject) {
     return <div>Объект не найден</div>;
@@ -44,7 +45,11 @@ const ObjectDescriptionPage: React.FC = () => {
           <div
             className={cn(classes.imageContainer)}
             key={index}
-            onClick={() => handleImageClick(item.image)}
+            onClick={() =>
+              handleImageClick(
+                typeof item.image === 'string' ? item.image : item.image.src
+              )
+            }
           >
             <Image
               src={item.image || imageNotFound}
@@ -58,7 +63,9 @@ const ObjectDescriptionPage: React.FC = () => {
       <ImagePopup
         isMounted={isPopupOpen}
         imageUrl={currentImageUrl!}
-        images={currentObject.src.map((item) => item.image)}
+        images={currentObject.src.map((item) =>
+          typeof item.image === 'string' ? item.image : item.image.src
+        )}
         onClose={handleClosePopup}
       />
       <div className={classes.objectTextContainer}>

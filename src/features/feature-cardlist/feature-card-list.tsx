@@ -4,7 +4,7 @@ import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import { typeFeatureCardProps } from './types';
-import { FeatureCard } from '../../shared/ui/feature-card/FeatureCard';
+import { FeatureCard } from '@/shared';
 
 export const FeatureCardList: React.FC<typeFeatureCardProps> = (props) => {
   const { techCardList } = props;

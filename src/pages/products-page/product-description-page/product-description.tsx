@@ -3,17 +3,18 @@
 import React, { useMemo } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { imageNotFound } from '@/shared/constants/not-found-image-link';
-import { useRouter } from 'next/navigation';
-import { HeaderSection } from '@/shared/ui/header-section/HeaderSection';
-import { useParams } from 'next/navigation';
-import { ProductCardTypeSmall } from '@/shared/ui/product-card-type-small';
-import { ProductCardInfo } from '@/shared/ui/product-card-info';
-import { CatalogLink } from '@/shared/ui/catalog-link';
-import { CatalogNavBar } from '@/shared/ui/catalog-navbar';
-import productDescription from '@/shared/constants/proructDescription';
-import { DocumentLink } from '@/shared/ui/document-link';
-import { SectionText } from '@/shared/ui/section-text';
+import {
+  imageNotFound,
+  HeaderSection,
+  ProductCardTypeSmall,
+  ProductCardInfo,
+  CatalogLink,
+  CatalogNavBar,
+  productDescription,
+  DocumentLink,
+  SectionText,
+} from '@/shared';
+import { useRouter, useParams } from 'next/navigation';
 
 const ProductDescription: React.FC = () => {
   const params = useParams();

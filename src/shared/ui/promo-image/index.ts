@@ -1,1 +1,0 @@
-export { PromoImage } from './PromoImage';

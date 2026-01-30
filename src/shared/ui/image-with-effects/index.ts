@@ -1,1 +1,1 @@
-export { ImageWithEffects } from './ImageWithEffects';
+export { ImageWithEffects } from './image-with-effects';

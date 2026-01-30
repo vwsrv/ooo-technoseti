@@ -1,1 +1,1 @@
-export { CatalogNavBar } from './catalogNavbar';
+export { CatalogNavBar } from './catalog-navbar';

@@ -1,10 +1,18 @@
+import type { StaticImageData } from 'next/image';
 import fittings from '../images/for-section-catalog/fittings.jpeg';
 import kolodcy from '../images/for-section-catalog/kolodcy.jpeg';
 import svarka from '../images/for-section-catalog/svarka.jpeg';
 import trubyPnd from '../images/for-section-catalog/truby-pnd.jpeg';
 import zaporArm from '../images/for-section-catalog/zapor-arm.jpeg';
 
-const dataList = [
+export interface ProductItem {
+  id: number;
+  src: StaticImageData;
+  title: string;
+  description: string;
+}
+
+const dataList: ProductItem[] = [
   {
     id: 1,
     src: fittings,

@@ -1,1 +1,1 @@
-export { ProductCardInfo } from './ProductCardInfo';
+export { ProductCardInfo } from './product-card-info';

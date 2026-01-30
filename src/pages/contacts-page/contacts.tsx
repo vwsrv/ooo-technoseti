@@ -3,8 +3,7 @@
 import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { ContactCard } from '@/shared/ui/contact-card/ContactCard';
-import { HeaderSection } from '@/shared/ui/header-section/HeaderSection';
+import { ContactCard, HeaderSection } from '@/shared';
 import officeImage from '../../../public/for-contactsPage/office.jpg';
 import skladImage from '../../../public/for-contactsPage/sklad.jpg';
 

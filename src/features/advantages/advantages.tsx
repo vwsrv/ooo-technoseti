@@ -3,7 +3,7 @@
 import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { Advantage } from '@/shared/ui/advantage/advantage';
+import { Advantage } from '@/shared';
 
 export const Advantages: React.FC = () => {
   const checkBoxData = [

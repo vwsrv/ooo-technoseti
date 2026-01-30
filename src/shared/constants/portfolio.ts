@@ -1,17 +1,31 @@
+import type { StaticImageData } from 'next/image';
 import fittings from '../images/main-logo/for-white-bg-logo-short.svg';
 
-const dataList = [
+export interface PortfolioImageItem {
+  id: number;
+  image: string | StaticImageData;
+}
+
+export interface PortfolioInfoItem {
+  infoTitle: string;
+  infoDescription: string;
+}
+
+export interface PortfolioItem {
+  id: number;
+  src: PortfolioImageItem[];
+  title: string;
+  description: string;
+  info?: PortfolioInfoItem[];
+  productInfo?: PortfolioInfoItem[];
+}
+
+const dataList: PortfolioItem[] = [
   {
     id: 1,
     src: [
-      {
-        id: 1,
-        image: '',
-      },
-      {
-        id: 2,
-        image: fittings,
-      },
+      { id: 1, image: '' },
+      { id: 2, image: fittings },
     ],
     title: 'Водоконалы московской области',
     description:
@@ -27,19 +41,12 @@ const dataList = [
   {
     id: 2,
     src: [
-      {
-        id: 1,
-        image: '',
-      },
-      {
-        id: 2,
-        image: fittings,
-      },
+      { id: 1, image: '' },
+      { id: 2, image: fittings },
     ],
     title: 'Складской комплекс «Обухово» в г.Москва',
     description:
       'Задвижки, клапаны, затворы и другая современная трубопроводная арматура. Задвижки, клапаны, затворы и другая современная трубопроводная арматура.',
-
     productInfo: [
       {
         infoTitle: 'Водоконалы московской области',
@@ -51,20 +58,11 @@ const dataList = [
   {
     id: 3,
     src: [
-      {
-        id: 1,
-        image: '',
-      },
-      {
-        id: 2,
-        image: '',
-      },
-      {
-        id: 3,
-        image: '',
-      },
+      { id: 1, image: '' },
+      { id: 2, image: '' },
+      { id: 3, image: '' },
     ],
-    title: 'Программа реновации жилищного фонда Москвы',
+    title: 'Программа реновации жилищного фонда Москвы',
     description:
       'Задвижки, клапаны, затворы и другая современная трубопроводная арматура. Задвижки, клапаны, затворы и другая современная трубопроводная арматура. Задвижки, клапаны, затворы и другая современная трубопроводная арматура.',
     productInfo: [
@@ -78,18 +76,9 @@ const dataList = [
   {
     id: 4,
     src: [
-      {
-        id: 1,
-        image: '',
-      },
-      {
-        id: 2,
-        image: '',
-      },
-      {
-        id: 3,
-        image: '',
-      },
+      { id: 1, image: '' },
+      { id: 2, image: '' },
+      { id: 3, image: '' },
     ],
     title: 'Пластиковые колодцы',
     description: 'Безнапорные магистральные и внутриквартальные сети.',
@@ -104,18 +93,9 @@ const dataList = [
   {
     id: 5,
     src: [
-      {
-        id: 1,
-        image: '',
-      },
-      {
-        id: 2,
-        image: '',
-      },
-      {
-        id: 3,
-        image: '',
-      },
+      { id: 1, image: '' },
+      { id: 2, image: '' },
+      { id: 3, image: '' },
     ],
     title: 'Объекты РЖД строй',
     description:
@@ -131,18 +111,9 @@ const dataList = [
   {
     id: 6,
     src: [
-      {
-        id: 1,
-        image: '',
-      },
-      {
-        id: 2,
-        image: '',
-      },
-      {
-        id: 3,
-        image: '',
-      },
+      { id: 1, image: '' },
+      { id: 2, image: '' },
+      { id: 3, image: '' },
     ],
     title: 'Мособлэнерго центральный аппарат ',
     description:

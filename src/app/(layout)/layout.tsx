@@ -1,9 +1,8 @@
 import React from 'react';
-import { Navigation } from '@/features/navigation';
-import { Footer } from '@/shared/ui/footer-component';
+import { Footer } from '@/shared';
+import { Navigation, HeaderNavigation } from '@/features';
 import classes from './styles.module.scss';
 import cn from 'classnames';
-import HeaderNavigation from '@/features/header-navigation/header-navigation';
 
 const MainLayout: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
   return (

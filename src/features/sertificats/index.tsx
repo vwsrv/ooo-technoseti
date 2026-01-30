@@ -1,1 +1,1 @@
-export { Sertificats } from './Sertificats';
+export { Sertificats } from './sertificats';

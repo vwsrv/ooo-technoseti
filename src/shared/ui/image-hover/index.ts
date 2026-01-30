@@ -1,1 +1,1 @@
-export { ImageHover } from './ImageHover';
+export { ImageHover } from './image-hover';

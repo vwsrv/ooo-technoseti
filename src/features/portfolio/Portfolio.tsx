@@ -1,12 +1,10 @@
 'use client';
 
 import styles from './styles.module.scss';
-import { SectionText } from '@/shared/ui/section-text';
+import { SectionText, ImageHover, imageOurObject } from '@/shared';
 import classes from './styles.module.scss';
 import cn from 'classnames';
-import { ImageHover } from '@/shared/ui/image-hover';
 import Link from 'next/link';
-import ourObject from '../../shared/images/for-portfolio/our-object.jpg';
 import { useRouter } from 'next/navigation';
 
 export const Portfolio: React.FC = () => {
@@ -30,7 +28,7 @@ export const Portfolio: React.FC = () => {
         </div>
         <div className={styles.imageContainer} onClick={() => handleNavigate()}>
           <ImageHover
-            imageUrl={ourObject.src}
+            imageUrl={imageOurObject.src}
             title="Аэровокзальный комплекс Елизово"
             buttonText="Перейти"
             onButtonClick={() => handleNavigate()}

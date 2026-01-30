@@ -1,0 +1,11 @@
+export { Navigation } from './navigation';
+export { default as HeaderNavigation } from './header-navigation/header-navigation';
+export { Introduction } from './introduction/introduction';
+export { Advantages } from './advantages/advantages';
+export { AboutCompany } from './about-company/about-company';
+export { OurFeatures } from './our-features';
+export { Portfolio } from './portfolio/portfolio';
+export { Sertificats } from './sertificats';
+export { default as ImagePopup } from './popup-form-image/image-popup';
+export { FeatureCardList } from './feature-cardlist';
+export type { TechCardProps } from './feature-cardlist/types';

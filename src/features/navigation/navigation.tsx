@@ -1,10 +1,8 @@
 'use client';
 
 import React from 'react';
-import { MenuNavList } from '@/shared/ui/menu-navigation-list';
+import { MenuNavList, CompanyLogo, menuNavData } from '@/shared';
 import styles from './index.module.scss';
-import { CompanyLogo } from '@/shared/ui/company-logo/companyLogo';
-import { menuNavData } from '../../shared/constants/menuNavigationData';
 
 export const Navigation: React.FC = () => {
   return (

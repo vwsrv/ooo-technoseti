@@ -1,5 +1,13 @@
-import { imageNotFound } from '@/shared/constants/not-found-image-link';
-const productDescription = [
+import { imageNotFound } from './not-found-image-link';
+
+export interface ProductDescriptionItem {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+}
+
+const productDescription: ProductDescriptionItem[] = [
   {
     id: 1,
     title: 'Фитинги пнд',

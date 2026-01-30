@@ -1,11 +1,13 @@
 import React from 'react';
 import classes from './index.module.scss';
-import { Introduction } from '@/features/introduction/introduction';
-import { Advantages } from '@/features/advantages/advantages';
-import { AboutCompany } from '@/features/about-company/about-company';
-import { OurFeatures } from '@/features/ourFeatures';
-import { Portfolio } from '@/features/portfolio/Portfolio';
-import { Sertificats } from '@/features/sertificats';
+import {
+  Introduction,
+  Advantages,
+  AboutCompany,
+  OurFeatures,
+  Portfolio,
+  Sertificats,
+} from '@/features';
 
 const MainPage: React.FC = () => {
   return (

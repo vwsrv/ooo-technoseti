@@ -1,8 +1,8 @@
 'use client';
 
 import styles from './styles.module.scss';
-import { FeatureCardList } from '../feature-cardlist';
-import { SectionText } from '@/shared/ui/section-text';
+import { SectionText } from '@/shared';
+import { FeatureCardList } from '@/features';
 
 export const OurFeatures: React.FC = () => {
   const techCardData = [

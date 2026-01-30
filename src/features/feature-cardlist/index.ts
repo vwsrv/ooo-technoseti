@@ -1,1 +1,1 @@
-export { FeatureCardList } from './FeatureCardList';
+export { FeatureCardList } from './feature-card-list';

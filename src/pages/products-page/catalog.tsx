@@ -3,10 +3,8 @@
 import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { ProductCard } from '@/shared/ui/product-card';
-import { HeaderSection } from '@/shared/ui/header-section/HeaderSection';
+import { ProductCard, HeaderSection, productsDataList } from '@/shared';
 import { useRouter } from 'next/navigation';
-import dataList from '@/shared/constants/products';
 
 const Catalog: React.FC = () => {
   const router = useRouter();
@@ -22,7 +20,7 @@ const Catalog: React.FC = () => {
     <div className={cn(classes.catalog)}>
       <HeaderSection headerTitle="Продукция" />
       <div className={cn(classes.catalogContainer)}>
-        {dataList.map((item, index) => (
+        {productsDataList.map((item, index) => (
           <ProductCard
             key={index}
             src={item.src}

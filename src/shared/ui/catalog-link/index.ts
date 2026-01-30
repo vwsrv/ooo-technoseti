@@ -1,1 +1,1 @@
-export { CatalogLink } from './catalogLink';
+export { CatalogLink } from './catalog-link';

@@ -1,1 +1,1 @@
-export { DocumentLink } from './documentLink';
+export { DocumentLink } from './document-link';

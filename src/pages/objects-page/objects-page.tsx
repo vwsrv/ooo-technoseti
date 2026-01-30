@@ -3,10 +3,8 @@
 import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { HeaderSection } from '@/shared/ui/header-section/HeaderSection';
+import { HeaderSection, ProductCard, portfolioDataList } from '@/shared';
 import { useRouter } from 'next/navigation';
-import dataList from '../../shared/constants/portfolio';
-import { ProductCard } from '@/shared/ui/product-card';
 
 const ObjectsPage: React.FC = (props) => {
   const router = useRouter();
@@ -22,7 +20,7 @@ const ObjectsPage: React.FC = (props) => {
     <div className={cn(classes.portfolio)}>
       <HeaderSection headerTitle="Объекты" />
       <div className={cn(classes.portfolioContainer)}>
-        {dataList.map((item) => (
+        {portfolioDataList.map((item) => (
           <ProductCard
             key={item.id}
             src={item.src[0].image}

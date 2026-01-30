@@ -1,4 +1,24 @@
-export const metaData = {
+export interface MetaIconItem {
+  url: string;
+  sizes?: string;
+  type?: string;
+  rel?: string;
+}
+
+export interface MetaIcons {
+  icon: MetaIconItem[];
+  apple: MetaIconItem[];
+}
+
+export interface MetaData {
+  title: string;
+  description: string;
+  icons: MetaIcons;
+  manifest: string;
+  appleMobileWebAppTitle: string;
+}
+
+export const metaData: MetaData = {
   title: 'ООО Техноcети - Современные технологии и решения',
   description:
     'Техноcети - ваш надежный партнер в мире современных технологий. Мы предлагаем инновационные решения в сфере строительства.',

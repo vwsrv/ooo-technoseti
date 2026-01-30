@@ -3,7 +3,7 @@
 import React from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { MenuNavLink } from '../menu-nav-link/MenuNavLink';
+import { MenuNavLink } from '../menu-nav-link/menu-nav-link';
 import { menuNavigationProps } from './types';
 
 export const MenuNavList: React.FC<menuNavigationProps> = (props) => {

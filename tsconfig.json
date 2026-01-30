@@ -22,21 +22,14 @@
       "@/*": ["./src/*"],
       "@/pages/*": ["./src/pages/*"],
       "@/widgets/*": ["./src/widgets/*"],
+      "@/shared": ["./src/shared"],
+      "@/shared/*": ["./src/shared/*"],
+      "@/features": ["./src/features"],
       "@/features/*": ["./src/features/*"],
-      "@/entities/*": ["./src/entities/*"],
-      "@/shared/*": ["./src/shared/*"]
+      "@/entities/*": ["./src/entities/*"]
     },
     "target": "ES2017"
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "src/shared/constants/proructDescription.js",
-    "src/shared/constants/products.js",
-    "src/shared/constants/portfolio.js",
-    "src/shared/constants/not-found-image-link.js"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }

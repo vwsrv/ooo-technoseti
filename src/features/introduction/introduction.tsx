@@ -1,9 +1,7 @@
 'use client';
 
 import classes from './styles.module.scss';
-import { SectionText } from '@/shared/ui/section-text';
-import { VideoBox } from '@/shared/ui/video-box';
-import { ButtonComponent } from '@/shared/ui/button-component';
+import { SectionText, VideoBox, ButtonComponent } from '@/shared';
 import { useRouter } from 'next/navigation';
 
 export const Introduction: React.FC = () => {

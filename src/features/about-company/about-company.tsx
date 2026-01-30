@@ -2,10 +2,12 @@
 
 import React from 'react';
 import classes from './styles.module.scss';
-import { SectionText } from '@/shared/ui/section-text';
-import CompanyLogo from '../../shared/images/main-logo/for-white-bg-logo-short.svg';
+import {
+  SectionText,
+  imageForWhiteBgLogoShort,
+  ImageWithEffects,
+} from '@/shared';
 import Image from 'next/image';
-import { ImageWithEffects } from '@/shared/ui/image-with-effects/ImageWithEffects';
 import cn from 'classnames';
 
 export const AboutCompany: React.FC = () => {
@@ -23,7 +25,7 @@ export const AboutCompany: React.FC = () => {
 "
           />
           <Image
-            src={CompanyLogo}
+            src={imageForWhiteBgLogoShort}
             alt="Логотип компании"
             width={96}
             height={96}

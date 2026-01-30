@@ -1,13 +1,15 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Header } from '@/shared/ui/header';
+import {
+  Header,
+  menuNavData,
+  MenuNavLink,
+  useMediaQuery,
+  imageLogoWidthWhite,
+} from '@/shared';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import companyLogo from '../../shared/images/main-logo/logo-width-white.svg';
-import { menuNavData } from '@/shared/constants/menuNavigationData';
-import { MenuNavLink } from '@/shared/ui/menu-nav-link/MenuNavLink';
-import { useMediaQuery } from '@/shared/lib/useMediaQuery';
 
 const HeaderNavigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +23,7 @@ const HeaderNavigation: React.FC = () => {
   return (
     isMobile && (
       <>
-        <Header headerAlt="Logo" headerLogo={companyLogo}>
+        <Header headerAlt="Logo" headerLogo={imageLogoWidthWhite}>
           <div className={classes.burgerMenu}>
             <button
               className={cn(classes.burgerIcon, { [classes.open]: isOpen })}
