@@ -3,7 +3,7 @@
 import { FC } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { ContactCard, HeaderSection } from '@/shared';
+import { ContactCard, SectionHeader, PageHeader } from '@/shared';
 import officeImage from '../../../public/for-contactsPage/office.jpg';
 import skladImage from '../../../public/for-contactsPage/sklad.jpg';
 
@@ -35,7 +35,7 @@ const ContactsPage: FC = () => {
 
   return (
     <div className={cn(classes.contactsPage)}>
-      <HeaderSection headerTitle="Контакты" />
+      <PageHeader headerTitle="Контакты" />
       <div className={cn(classes.cardList)}>
         {myContacts.map((item, index) => (
           <div key={index} className={cn(classes.cardItem)}>

@@ -5,14 +5,14 @@ import cn from 'classnames';
 import classes from './styles.module.scss';
 import {
   imageNotFound,
-  HeaderSection,
+  SectionHeader,
+  PageHeader,
   ProductCardTypeSmall,
   InfoCard,
   CatalogLink,
-  CatalogNavBar,
+  Navbar,
   productDescription,
   DocumentLink,
-  SectionHeader,
 } from '@/shared';
 import { useRouter, useParams } from 'next/navigation';
 
@@ -49,7 +49,7 @@ const ProductDescription: FC = () => {
 
   return (
     <div className={cn(classes.productDescriptionPage)}>
-      <HeaderSection headerTitle={product.title} />
+      <PageHeader headerTitle={product.title} />
       <div className={cn(classes.productInfoContent)}>
         <div className={cn(classes.productInfoHolder)}>
           <div className={cn(classes.productInfoContainer)}>
@@ -72,7 +72,7 @@ const ProductDescription: FC = () => {
           </div>
         </div>
         <div className={cn(classes.catalogNavBar)}>
-          <CatalogNavBar>
+          <Navbar>
             {filteredProducts.map((item) => (
               <CatalogLink
                 key={item.id}
@@ -80,7 +80,7 @@ const ProductDescription: FC = () => {
                 name={item.title}
               />
             ))}
-          </CatalogNavBar>
+          </Navbar>
           <div className={cn(classes.catalogDownloads)}>
             <SectionHeader variant="orange" title="Полезные материалы:" />
             <DocumentLink variant="doc" title="Буклет о компании .DOC" />

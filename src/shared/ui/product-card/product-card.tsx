@@ -6,7 +6,7 @@ import classes from './styles.module.scss';
 import cn from 'classnames';
 import { typeProductCardProps } from './types';
 import { Button } from '@/shared/ui/button/button';
-import { imageNotFound } from '../../constants/not-found-image-link';
+import { imageNotFound } from '@/shared';
 
 export const ProductCard: FC<typeProductCardProps> = ({
   src,

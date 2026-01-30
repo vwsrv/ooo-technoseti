@@ -1,0 +1,89 @@
+.footer {
+  background-color: var(--black-color);
+  padding: 40px 20px 20px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.footerColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1170px;
+  margin: 0 auto 30px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footerColumnDescription,
+.footerColumnLinks,
+.footerColumnSchedule,
+.footerRowAbout {
+  color: var(--dark-grey-color);
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 336px;
+  transition: color 0.3s ease;
+}
+
+.footerColumnLinks {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    margin: 0;
+  }
+}
+
+.footerLink {
+  color: var(--grey-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--pink-color);
+  }
+}
+
+.footerColumnLinks :visited,
+.footerRowAbout :visited {
+  color: var(--dark-grey-color);
+}
+
+.footerColumnLinks .footerLink:hover,
+.footerRowAbout .footerLink:hover {
+  color: var(--pink-color);
+}
+
+.workDays {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px dashed var(--grey-color);
+  transition: border-color 0.3s ease;
+}
+
+.typeOrange {
+  color: var(--orange-color);
+}
+
+.footerRowAbout {
+  max-width: none;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  .footerLink {
+    color: var(--dark-grey-color);
+  }
+}

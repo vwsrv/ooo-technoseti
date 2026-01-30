@@ -5,14 +5,13 @@ export { default as portfolioDataList } from './constants/portfolio';
 export { default as productsDataList } from './constants/products';
 export { default as productDescription } from './constants/product-description';
 
-export { Footer } from './ui/footer-component';
-export { Header } from './ui/header';
-export { HeaderSection } from './ui/header-section/header-section';
 export { ProductCard } from './ui/product-card';
 export { ProductCardTypeSmall } from './ui/product-card-type-small';
 export { InfoCard } from './ui/info-card';
 export { CatalogLink } from './ui/catalog-link';
-export { CatalogNavBar } from './ui/catalog-navbar';
+export { Navbar } from '../widgets/navbar';
+export { Footer } from '../widgets/footer';
+export { PageHeader } from '../widgets/page-header';
 export { DocumentLink } from './ui/document-link';
 export { SectionHeader } from './ui/section-header';
 export { ContactCard } from './ui/contact-card';

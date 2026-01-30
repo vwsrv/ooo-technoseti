@@ -1,8 +1,9 @@
 'use client';
 
 import { FC, useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 import {
-  Header,
   menuNavData,
   MenuNavLink,
   useMediaQuery,
@@ -23,7 +24,15 @@ const HeaderNavigation: FC = () => {
   return (
     isMobile && (
       <>
-        <Header headerAlt="Logo" headerLogo={imageLogoWidthWhite}>
+        <header className={classes.header}>
+          <Link href="/" className={classes.logoLink} aria-label="На главную">
+            <Image
+              src={imageLogoWidthWhite}
+              fill
+              style={{ objectFit: 'contain' }}
+              alt="Logo"
+            />
+          </Link>
           <div className={classes.burgerMenu}>
             <button
               className={cn(classes.burgerIcon, { [classes.open]: isOpen })}
@@ -35,7 +44,7 @@ const HeaderNavigation: FC = () => {
               <div className={classes.burgerLine}></div>
             </button>
           </div>
-        </Header>
+        </header>
         <div
           className={cn(classes.navigationContainer, {
             [classes.open]: isOpen,

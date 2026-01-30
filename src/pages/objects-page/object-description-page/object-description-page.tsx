@@ -3,7 +3,7 @@
 import { FC, useState } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { imageNotFound, portfolioDataList } from '@/shared';
+import { imageNotFound, portfolioDataList, PageHeader } from '@/shared';
 import { ImagePopup } from '@/features';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
@@ -38,6 +38,7 @@ const ObjectDescriptionPage: FC = () => {
 
   return (
     <div className={cn(classes.objectDescriptionPage)}>
+      <PageHeader headerTitle={currentObject.title} />
       <div className={cn(classes.imageList)}>
         {currentObject.src.map((item, index) => (
           <div

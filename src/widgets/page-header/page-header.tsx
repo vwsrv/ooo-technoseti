@@ -4,10 +4,10 @@ import { FC, Fragment } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import cn from 'classnames';
-import { typeHeaderSectionProps } from './types';
+import { typePageHeaderProps } from './types';
 import classes from './styles.module.scss';
 
-const routeNames = {
+const routeNames: Record<string, string> = {
   '': 'Главная',
   catalog: 'Продукция',
   objects: 'Объекты',
@@ -15,7 +15,7 @@ const routeNames = {
   contacts: 'Контакты',
 };
 
-export const HeaderSection: FC<typeHeaderSectionProps> = ({
+export const PageHeader: FC<typePageHeaderProps> = ({
   startElement = 'Главная',
   separator = '>',
   headerTitle,
@@ -23,12 +23,11 @@ export const HeaderSection: FC<typeHeaderSectionProps> = ({
   const pathname = usePathname();
   const pathnames = pathname?.split('/').filter((x) => x) || [];
 
-  type RouteNames = keyof typeof routeNames;
-  const formatPathname = (pathname: RouteNames | string) =>
-    routeNames[pathname as RouteNames] || pathname;
+  const formatPathname = (segment: string) =>
+    routeNames[segment] ?? segment;
 
   return (
-    <header className={classes.headerSection}>
+    <header className={classes.pageHeader}>
       <div className={classes.titleHolder}>
         <h2>{headerTitle}</h2>
       </div>
@@ -36,12 +35,12 @@ export const HeaderSection: FC<typeHeaderSectionProps> = ({
         <Link href="/">
           <span className={classes.headerSectionItem}>{startElement}</span>
         </Link>
-        {pathnames.map((pathname, index) => {
+        {pathnames.map((segment, index) => {
           const isLast = index === pathnames.length - 1;
           const routeTo = `/${pathnames.slice(0, index + 1).join('/')}`;
 
           return (
-            <Fragment key={pathname}>
+            <Fragment key={segment}>
               <span className={classes.headerSectionSeparator}>
                 {separator}
               </span>
@@ -51,7 +50,7 @@ export const HeaderSection: FC<typeHeaderSectionProps> = ({
                     [classes.headerSectionItemActive]: isLast,
                   })}
                 >
-                  {formatPathname(pathname)}
+                  {formatPathname(segment)}
                 </span>
               ) : (
                 <Link href={routeTo}>
@@ -60,7 +59,7 @@ export const HeaderSection: FC<typeHeaderSectionProps> = ({
                       [classes.headerSectionItemActive]: isLast,
                     })}
                   >
-                    {formatPathname(pathname)}
+                    {formatPathname(segment)}
                   </span>
                 </Link>
               )}

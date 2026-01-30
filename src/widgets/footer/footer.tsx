@@ -1,27 +1,15 @@
 import { FC } from 'react';
 import cn from 'classnames';
-import classes from './styles.module.scss';
-import { SectionHeader } from '../section-header';
 import Link from 'next/link';
+import { SectionHeader } from '@/shared';
+import classes from './styles.module.scss';
 
 export const Footer: FC = () => {
   const footerLinks = [
-    {
-      title: 'Трубы PETRIX',
-      link: '/',
-    },
-    {
-      title: 'Канализационная насосная станция',
-      link: '/',
-    },
-    {
-      title: 'Пластиковые колодцы',
-      link: '/',
-    },
-    {
-      title: 'Запорная арматура',
-      link: '/',
-    },
+    { title: 'Трубы PETRIX', link: '/' },
+    { title: 'Канализационная насосная станция', link: '/' },
+    { title: 'Пластиковые колодцы', link: '/' },
+    { title: 'Запорная арматура', link: '/' },
   ];
 
   return (
@@ -59,10 +47,7 @@ export const Footer: FC = () => {
         </div>
       </div>
       <div className={cn(classes.footerRowAbout)}>
-        <Link
-          href="https://github.com/vwsrv"
-          className={cn(classes.footerLink)}
-        >
+        <Link href="https://github.com/vwsrv" className={cn(classes.footerLink)}>
           © 2025 ООО «ТЕХНОСЕТИ». Автор: Василий В.
         </Link>
       </div>

@@ -3,7 +3,7 @@
 import { FC } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { ProductCard, HeaderSection, productsDataList } from '@/shared';
+import { ProductCard, SectionHeader, PageHeader, productsDataList } from '@/shared';
 import { useRouter } from 'next/navigation';
 
 const Catalog: FC = () => {
@@ -18,7 +18,7 @@ const Catalog: FC = () => {
 
   return (
     <div className={cn(classes.catalog)}>
-      <HeaderSection headerTitle="Продукция" />
+      <PageHeader headerTitle="Продукция" />
       <div className={cn(classes.catalogContainer)}>
         {productsDataList.map((item, index) => (
           <ProductCard

@@ -6,10 +6,10 @@ import styles from './index.module.scss';
 
 export const Navigation: FC = () => {
   return (
-    <div className={styles.menuBar}>
+    <header className={styles.menuBar}>
       <CompanyLogo />
       <MenuNavList navLinks={menuNavData} />
       <div className={styles.menuBarLine}></div>
-    </div>
+    </header>
   );
 };

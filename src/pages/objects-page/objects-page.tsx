@@ -3,7 +3,7 @@
 import { FC } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
-import { HeaderSection, ProductCard, portfolioDataList } from '@/shared';
+import { SectionHeader, PageHeader, ProductCard, portfolioDataList } from '@/shared';
 import { useRouter } from 'next/navigation';
 
 const ObjectsPage: FC = () => {
@@ -18,7 +18,7 @@ const ObjectsPage: FC = () => {
 
   return (
     <div className={cn(classes.portfolio)}>
-      <HeaderSection headerTitle="Объекты" />
+      <PageHeader headerTitle="Объекты" />
       <div className={cn(classes.portfolioContainer)}>
         {portfolioDataList.map((item) => (
           <ProductCard
