@@ -32,7 +32,7 @@
   flex-direction: column;
   gap: 40px;
   width: 100%;
-  justify-content: start;
+  justify-content: flex-start;
   display: flex;
 
   @media (max-width: 600px) {

@@ -1,8 +1,8 @@
 import React from 'react';
-import '../src/app/styles/normalize.css';
-import '../src/app/styles/global.css';
+import './styles/normalize.css';
+import './styles/global.css';
 import { montserrat, roboto } from '@/app/fonts/fonts';
-import { metaData as meta } from '../src/shared/constants/metadata';
+import { metaData as meta } from '@/shared/constants/metadata';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
