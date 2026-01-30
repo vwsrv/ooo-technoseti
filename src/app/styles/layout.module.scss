@@ -4,6 +4,10 @@
   flex-direction: column;
 }
 
+.mainLayoutWrapper:has([data-page="not-found"]) ~ :global(footer) {
+  display: none !important;
+}
+
 .pageWrapper {
   max-width: 1170px;
   margin: 0 auto;

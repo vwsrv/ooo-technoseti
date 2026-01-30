@@ -40,7 +40,7 @@ jobs:
           VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
         run: |
           mkdir -p ~/.ssh
-          echo "$VPS_SSH_KEY" > ~/.ssh/deploy_key
+          echo "$VPS_SSH_KEY" | base64 -d > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
           docker save ooo-technoseti:latest | ssh -o StrictHostKeyChecking=no -i ~/.ssh/deploy_key root@$VPS_HOST 'docker load'
           ssh -o StrictHostKeyChecking=no -i ~/.ssh/deploy_key root@$VPS_HOST 'docker stop ooo-technoseti 2>/dev/null || true; docker rm ooo-technoseti 2>/dev/null || true; docker run -d --name ooo-technoseti --restart unless-stopped -p 3000:3000 ooo-technoseti:latest; docker image prune -f'
