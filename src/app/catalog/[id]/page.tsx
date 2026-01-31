@@ -1,7 +1,7 @@
 'use client';
 
 import { FC } from 'react';
-import ProductDescription from '@/pages/products-page/product-description-page/product-description';
+import { ProductDescription } from '@/features';
 
 const ItemDescription: FC = () => <ProductDescription />;
 

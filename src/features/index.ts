@@ -4,4 +4,5 @@ export { ObjectsList } from './objects-list';
 export { ObjectDescription } from './object-description';
 export { CatalogList } from './catalog-list';
 export { useProductDescriptionData } from './product-description-data';
+export { ProductDescription } from './product-description';
 export type { TechCardProps } from './feature-cardlist/types';
