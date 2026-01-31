@@ -4,14 +4,12 @@ module.exports = {
   output: 'standalone',
   outputFileTracingRoot: path.join(__dirname),
   images: {
-    domains: ['imgholder.ru'],
-  },
-  async rewrites() {
-    return [
+    remotePatterns: [
       {
-        source: '/robots.txt',
-        destination: '/api/robots.txt',
+        protocol: 'https',
+        hostname: 'imgholder.ru',
+        pathname: '/**',
       },
-    ];
+    ],
   },
 };

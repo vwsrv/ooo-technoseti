@@ -8,6 +8,8 @@ import {
   MenuNavLink,
   useMediaQuery,
   imageLogoWidthWhite,
+  BP_LG,
+  mediaQueryMaxWidth,
 } from '@/shared';
 import cn from 'classnames';
 import classes from './styles.module.scss';
@@ -19,7 +21,7 @@ const HeaderNavigation: FC = () => {
     setIsOpen(!isOpen);
   };
 
-  const isMobile = useMediaQuery('(max-width: 1040px)');
+  const isMobile = useMediaQuery(mediaQueryMaxWidth(BP_LG));
 
   return (
     isMobile && (
@@ -29,6 +31,7 @@ const HeaderNavigation: FC = () => {
             <Image
               src={imageLogoWidthWhite}
               fill
+              sizes="(max-width: 768px) 150px, 250px"
               style={{ objectFit: 'contain' }}
               alt="Logo"
             />

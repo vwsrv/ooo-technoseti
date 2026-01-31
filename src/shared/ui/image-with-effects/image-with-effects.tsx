@@ -39,6 +39,7 @@ export const ImageWithEffects: FC = () => {
           className={cn(classes.mainImage)}
           width={448}
           height={600}
+          priority
         />
       </div>
       <div className={cn(classes.purpleBorder)}></div>

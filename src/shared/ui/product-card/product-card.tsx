@@ -21,7 +21,8 @@ export const ProductCard: FC<typeProductCardProps> = ({
           className={cn(classes.cardImage)}
           src={src ? src : imageNotFound}
           alt={title}
-          fill={true}
+          fill
+          sizes="(max-width: 768px) 100vw, 560px"
         />
       </div>
       <div className={cn(classes.cardInfo)}>

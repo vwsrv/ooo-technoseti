@@ -1,24 +1,6 @@
-export interface MetaIconItem {
-  url: string;
-  sizes?: string;
-  type?: string;
-  rel?: string;
-}
+import type { Metadata } from 'next';
 
-export interface MetaIcons {
-  icon: MetaIconItem[];
-  apple: MetaIconItem[];
-}
-
-export interface MetaData {
-  title: string;
-  description: string;
-  icons: MetaIcons;
-  manifest: string;
-  appleMobileWebAppTitle: string;
-}
-
-export const metaData: MetaData = {
+export const metadata: Metadata = {
   title: 'ООО Техноcети - Современные технологии и решения',
   description:
     'Техноcети - ваш надежный партнер в мире современных технологий. Мы предлагаем инновационные решения в сфере строительства.',
@@ -33,5 +15,41 @@ export const metaData: MetaData = {
     ],
   },
   manifest: '/site.webmanifest',
-  appleMobileWebAppTitle: 'Техносети',
+  appleWebApp: {
+    title: 'Техносети',
+  },
+  other: {
+    'geo.region': 'RU',
+  },
+  openGraph: {
+    siteName: 'Техно-Сети',
+    title: 'ООО Техноcети - Современные технологии и решения',
+    description:
+      'Техноcети - ваш надежный партнер в мире современных технологий. Мы предлагаем инновационные решения в сфере строительства.',
+    type: 'website',
+    url: 'https://technoseti.ru',
+    locale: 'ru_RU',
+    images: [
+      {
+        url: 'https://technoseti.ru/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Техно-Сети',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ООО Техноcети - Современные технологии и решения',
+    description:
+      'Техноcети - ваш надежный партнер в мире современных технологий. Мы предлагаем инновационные решения в сфере строительства.',
+    images: [
+      {
+        url: 'https://technoseti.ru/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Техно-Сети',
+      },
+    ],
+  },
 };

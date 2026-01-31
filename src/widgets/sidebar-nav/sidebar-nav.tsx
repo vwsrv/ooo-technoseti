@@ -4,7 +4,6 @@ import { FC } from 'react';
 import cn from 'classnames';
 import Image from 'next/image';
 import classes from './styles.module.scss';
-import { MENU_NAV_DATA } from './constants';
 import { MenuNavLink, imageLogoWidthWhite } from '@/shared';
 
 export const SidebarNav: FC = () => (
@@ -19,9 +18,11 @@ export const SidebarNav: FC = () => (
     </div>
     <nav className={cn(classes.menuNavigation)}>
       <ul className={classes.menuWrapper}>
-        {MENU_NAV_DATA.map((item, index) => (
-          <MenuNavLink key={index} link={item.link} name={item.name} />
-        ))}
+        <MenuNavLink link="/" name="Главная" />
+        <MenuNavLink link="/catalog" name="Продукция" />
+        <MenuNavLink link="/objects" name="Объекты" />
+        <MenuNavLink link="/news" name="Новости и статьи" />
+        <MenuNavLink link="/contacts" name="Контакты" />
       </ul>
     </nav>
     <div className={classes.menuBarLine} />

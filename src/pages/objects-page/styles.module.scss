@@ -14,22 +14,17 @@
   grid-template-columns: repeat(2, 1fr);
   transition: all 0.3s ease-in-out;
 
-  @media (max-width: 1600px) {
+  @media (max-width: 1536px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
 
-  @media (max-width: 1400px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 35px;
-  }
-
-  @media (max-width: 1300px) {
+  @media (max-width: 1280px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
 
-  @media (max-width: 1040px) {
+  @media (max-width: 1024px) {
     grid-template-columns: 1fr 1fr;
     gap: 25px;
   }

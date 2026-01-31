@@ -1,0 +1,14 @@
+// Общепринятая шкала брейкпоинтов (Tailwind-подобная)
+$bp-xs: 320px;
+$bp-sm: 480px;
+$bp-md: 640px;
+$bp-tablet: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;
+$bp-2xl: 1536px;
+
+@mixin max-w($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
