@@ -1,50 +1,8 @@
-import type { StaticImageData } from 'next/image';
-import fittings from '../images/for-section-catalog/fittings.jpeg';
-import kolodcy from '../images/for-section-catalog/kolodcy.jpeg';
-import svarka from '../images/for-section-catalog/svarka.jpeg';
-import trubyPnd from '../images/for-section-catalog/truby-pnd.jpeg';
-import zaporArm from '../images/for-section-catalog/zapor-arm.jpeg';
-
 export interface ProductItem {
   id: number;
-  src: StaticImageData;
+  imageSrc: string;
   title: string;
   description: string;
+  fullDescription: string;
+  image: string;
 }
-
-const dataList: ProductItem[] = [
-  {
-    id: 1,
-    src: fittings,
-    title: 'Фитинги пнд',
-    description: 'Фитинги электросварные и СПИГОТ для газа и воды.',
-  },
-  {
-    id: 2,
-    src: trubyPnd,
-    title: 'Трубы пнд',
-    description: 'Фитинги электросварные и СПИГОТ для газа и воды.',
-  },
-  {
-    id: 3,
-    src: zaporArm,
-    title: 'Запорная арматура',
-    description:
-      'Задвижки, клапаны, затворы и другая современная трубопроводная арматура.',
-  },
-  {
-    id: 4,
-    src: kolodcy,
-    title: 'Пластиковые колодцы',
-    description: 'Безнапорные магистральные и внутриквартальные сети.',
-  },
-  {
-    id: 5,
-    src: svarka,
-    title: 'Сварочное оборудование',
-    description:
-      'Электромуфтовые сварочные аппараты, аппараты для стыковой сварки',
-  },
-];
-
-export default dataList;

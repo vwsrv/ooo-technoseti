@@ -1,9 +1,22 @@
 export { imageNotFound } from './constants/not-found-image-link';
-export { metaData } from './constants/metadata';
+export { metadata } from './constants/metadata';
 export { menuNavData } from './constants/menu-navigation-data';
-export { default as portfolioDataList } from './constants/portfolio';
-export { default as productsDataList } from './constants/products';
-export { default as productDescription } from './constants/product-description';
+export {
+  BP_LG,
+  BP_XL,
+  BP_2XL,
+  BP_SM,
+  BP_MD,
+  BP_TABLET,
+  BP_XS,
+  mediaQueryMaxWidth,
+} from './constants/breakpoints';
+export type { ProductItem } from './constants/products';
+export type {
+  PortfolioItem,
+  PortfolioImageItem,
+  PortfolioInfoItem,
+} from './constants/portfolio';
 
 export { ProductCard } from './ui/product-card';
 export { ProductCardTypeSmall } from './ui/product-card-type-small';

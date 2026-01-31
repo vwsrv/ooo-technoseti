@@ -1,9 +1,11 @@
 'use client';
 
-import { FC } from 'react';
+import { FC, useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { ProductCard, productsDataList } from '@/shared';
+import { ProductCard } from '@/shared';
+import { fetchProducts } from '@/app/api';
 import cn from 'classnames';
+import type { ProductItem } from '@/shared/constants/products';
 
 type CatalogListProps = {
   containerClassName?: string;
@@ -11,6 +13,11 @@ type CatalogListProps = {
 
 export const CatalogList: FC<CatalogListProps> = ({ containerClassName }) => {
   const router = useRouter();
+  const [products, setProducts] = useState<ProductItem[]>([]);
+
+  useEffect(() => {
+    fetchProducts().then(setProducts);
+  }, []);
 
   const handleCardClick = (id: number) => {
     if (id) {
@@ -22,10 +29,10 @@ export const CatalogList: FC<CatalogListProps> = ({ containerClassName }) => {
 
   return (
     <div className={cn(containerClassName)}>
-      {productsDataList.map((item, index) => (
+      {products.map((item, index) => (
         <ProductCard
-          key={index}
-          src={item.src}
+          key={item.id ?? index}
+          src={item.imageSrc}
           title={item.title}
           description={item.description}
           onClick={() => handleCardClick(item.id)}

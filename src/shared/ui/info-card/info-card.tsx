@@ -14,7 +14,7 @@ export const InfoCard: FC<typeProductCardInfoProps> = ({
 }) => (
   <div className={cn(classes.cardInfo)}>
     <div className={cn(classes.imageContainer)}>
-      <Image src={src || imageNotFound} alt={title} fill={true} />
+      <Image src={src || imageNotFound} alt={title} fill sizes="100vw" />
     </div>
     <div className={cn(classes.cardInfoContainer)}>
       <div className={cn(classes.cardInfo)}>

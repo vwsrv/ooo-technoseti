@@ -1,6 +1,6 @@
 'use client';
 
-import { FC, useMemo } from 'react';
+import { FC, useState, useEffect } from 'react';
 import cn from 'classnames';
 import classes from './styles.module.scss';
 import {
@@ -10,41 +10,32 @@ import {
   ProductCardTypeSmall,
   InfoCard,
   CatalogLink,
-  productDescription,
   DocumentLink,
 } from '@/shared';
-import { useRouter, useParams } from 'next/navigation';
+import { fetchProducts } from '@/app/api';
+import { useProductDescriptionData } from '@/features';
+import { useRouter, useParams, notFound } from 'next/navigation';
+import type { ProductItem } from '@/shared/constants/products';
 
 const ProductDescription: FC = () => {
   const params = useParams();
   const router = useRouter();
   const id = params?.id ? Number(params.id) : null;
+  const [products, setProducts] = useState<ProductItem[]>([]);
 
-  const randomProducts = useMemo(() => {
-    if (id === null) return [];
-    const filtered = productDescription.filter((item) => item.id !== id);
-    const shuffled = [...filtered];
-    for (let i = shuffled.length - 1; i > 0; i--) {
-      const j = (id * (i + 1)) % (i + 1);
-      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-    }
-    return shuffled.slice(0, 2);
-  }, [id]);
+  useEffect(() => {
+    fetchProducts().then(setProducts);
+  }, []);
 
-  if (id === null) {
-    return <div>Ошибка: ID товара не указан</div>;
-  }
+  const { product, catalogProducts, relatedProducts } =
+    useProductDescriptionData(products, id);
 
-  const product = productDescription.find((item) => item.id === id);
+  const isInvalidId =
+    id === null || Number.isNaN(id) || !Number.isInteger(id) || id < 1;
+  if (isInvalidId) notFound();
 
-  if (!product) {
-    return <div>Товар не найден</div>;
-  }
-
-  const handleCardClick = (id: number) => {
-    router.push(`/catalog/${id}`);
-  };
-  const filteredProducts = productDescription.filter((item) => item.id !== id);
+  if (products.length === 0) return <div>Загрузка...</div>;
+  if (!product) notFound();
 
   return (
     <div className={cn(classes.productDescriptionPage)}>
@@ -54,25 +45,25 @@ const ProductDescription: FC = () => {
           <div className={cn(classes.productInfoContainer)}>
             <InfoCard
               title={product.title}
-              description={product.description}
+              description={product.fullDescription}
               src={product.image || imageNotFound}
             />
           </div>
           <h3 className={cn(classes.anotherProducts)}>Другое оборудование</h3>
           <div className={cn(classes.productDescriptionContainer)}>
-            {randomProducts.map((item) => (
+            {relatedProducts.map((item) => (
               <ProductCardTypeSmall
                 key={item.id}
                 title={item.title}
                 description={item.description}
-                onClick={() => handleCardClick(item.id)}
+                onClick={() => router.push(`/catalog/${item.id}`)}
               />
             ))}
           </div>
         </div>
         <div className={cn(classes.catalogNavBar)}>
           <div className={cn(classes.navBarBlock)}>
-            {filteredProducts.map((item) => (
+            {catalogProducts.map((item) => (
               <CatalogLink
                 key={item.id}
                 catalogLink={item.title}

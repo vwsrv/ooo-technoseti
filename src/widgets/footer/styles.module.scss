@@ -5,7 +5,7 @@
   font-family: inherit;
   margin-left: 300px;
 
-  @media (max-width: 1040px) {
+  @media (max-width: 1024px) {
     margin-left: 0;
   }
 }
@@ -17,11 +17,11 @@
   max-width: 1170px;
   margin: 0 auto 30px;
 
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 640px) {
     grid-template-columns: 1fr;
   }
 }

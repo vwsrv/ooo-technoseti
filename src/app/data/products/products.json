@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "imageSrc": "/catalog/fittings.jpeg",
+      "title": "Фитинги пнд",
+      "description": "Фитинги электросварные и СПИГОТ для газа и воды.",
+      "fullDescription": "Подробное описание фитингов пнд для газа и воды.",
+      "image": "/catalog/fittings.jpeg"
+    },
+    {
+      "id": 2,
+      "imageSrc": "/catalog/truby-pnd.jpeg",
+      "title": "Трубы пнд",
+      "description": "Фитинги электросварные и СПИГОТ для газа и воды.",
+      "fullDescription": "Подробное описание труб пнд для газа и воды.",
+      "image": "/catalog/truby-pnd.jpeg"
+    },
+    {
+      "id": 3,
+      "imageSrc": "/catalog/zapor-arm.jpeg",
+      "title": "Запорная арматура",
+      "description": "Задвижки, клапаны, затворы и другая современная трубопроводная арматура.",
+      "fullDescription": "Подробное описание запорной арматуры.",
+      "image": "/catalog/zapor-arm.jpeg"
+    },
+    {
+      "id": 4,
+      "imageSrc": "/catalog/kolodcy.jpeg",
+      "title": "Пластиковые колодцы",
+      "description": "Безнапорные магистральные и внутриквартальные сети.",
+      "fullDescription": "Подробное описание пластиковых колодцев.",
+      "image": "/catalog/kolodcy.jpeg"
+    },
+    {
+      "id": 5,
+      "imageSrc": "/catalog/svarka.jpeg",
+      "title": "Сварочное оборудование",
+      "description": "Электромуфтовые сварочные аппараты, аппараты для стыковой сварки",
+      "fullDescription": "Подробное описание сварочного оборудования.",
+      "image": "/catalog/svarka.jpeg"
+    }
+  ]
+}

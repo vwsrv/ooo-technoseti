@@ -1,16 +1,26 @@
 'use client';
 
-import { FC } from 'react';
+import { FC, useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { ProductCard, portfolioDataList } from '@/shared';
+import { ProductCard, imageNotFound } from '@/shared';
+import { fetchPortfolio } from '@/app/api';
 import cn from 'classnames';
+import type { PortfolioItem } from '@/shared/constants/portfolio';
 
 type ObjectsListProps = {
   containerClassName?: string;
 };
 
+const getFirstImage = (item: PortfolioItem): string =>
+  item.src.find((s) => s.image)?.image ?? imageNotFound;
+
 export const ObjectsList: FC<ObjectsListProps> = ({ containerClassName }) => {
   const router = useRouter();
+  const [portfolio, setPortfolio] = useState<PortfolioItem[]>([]);
+
+  useEffect(() => {
+    fetchPortfolio().then(setPortfolio);
+  }, []);
 
   const handleCardClick = (id: number) => {
     if (id) {
@@ -22,10 +32,10 @@ export const ObjectsList: FC<ObjectsListProps> = ({ containerClassName }) => {
 
   return (
     <div className={cn(containerClassName)}>
-      {portfolioDataList.map((item) => (
+      {portfolio.map((item) => (
         <ProductCard
           key={item.id}
-          src={item.src[0].image}
+          src={getFirstImage(item)}
           title={item.title}
           description={item.description}
           onClick={() => handleCardClick(item.id)}

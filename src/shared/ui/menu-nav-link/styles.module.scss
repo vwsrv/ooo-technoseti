@@ -24,12 +24,12 @@
     position: relative;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 
-    @media (max-width: 1040px) {
+    @media (max-width: 1024px) {
       border-bottom: none;
     }
 
     .linkName {
-      @media (max-width: 1040px) {
+      @media (max-width: 1024px) {
         font-size: 12px;
       }
     }

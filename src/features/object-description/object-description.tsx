@@ -1,28 +1,37 @@
 'use client';
 
-import { FC, useState } from 'react';
+import { FC, useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import classes from './styles.module.scss';
-import {
-  imageNotFound,
-  portfolioDataList,
-  PageHeader,
-  ImagePopup,
-} from '@/shared';
+import { imageNotFound, PageHeader, ImagePopup } from '@/shared';
+import { fetchPortfolio } from '@/app/api';
+import type {
+  PortfolioItem,
+  PortfolioImageItem,
+} from '@/shared/constants/portfolio';
 
-const getImageSrc = (item: { image: string | { src: string } }) =>
-  typeof item.image === 'string' ? item.image : item.image.src;
+const getImageSrc = (item: PortfolioImageItem): string =>
+  item.image && item.image.trim() !== '' ? item.image : imageNotFound;
 
 export const ObjectDescription: FC = () => {
   const params = useParams();
   const id = params?.id;
+  const [portfolio, setPortfolio] = useState<PortfolioItem[]>([]);
   const [isPopupOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
-  const currentObject = portfolioDataList.find(
+  useEffect(() => {
+    fetchPortfolio().then(setPortfolio);
+  }, []);
+
+  const currentObject = portfolio.find(
     (item) => item.id === Number(typeof id === 'string' ? id : undefined)
   );
+
+  if (portfolio.length === 0) {
+    return <div>Загрузка...</div>;
+  }
 
   if (!currentObject) {
     return <div>Объект не найден</div>;
@@ -45,9 +54,10 @@ export const ObjectDescription: FC = () => {
               }}
             >
               <Image
-                src={item.image || imageNotFound}
+                src={getImageSrc(item)}
                 alt={`Image ${index + 1}`}
                 fill
+                sizes="(max-width: 768px) 280px, 400px"
                 style={{ objectFit: 'cover' }}
               />
             </div>
