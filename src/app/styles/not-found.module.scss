@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 80dvh;
   padding: 40px 20px;
   text-align: center;
 }
@@ -17,12 +17,12 @@
 }
 
 .code {
-  font-size: clamp(120px, 20vw, 200px);
+  font-size: clamp(120px, 20dvw, 200px);
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.02em;
   color: var(--black-color);
-  font-family: var(--font-montserrat);
+  font-family: var(--font-montserrat), serif;
 }
 
 .codeAccent {
