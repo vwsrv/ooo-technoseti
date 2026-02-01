@@ -3,6 +3,19 @@
   max-width: 1170px;
 }
 
+:global {
+  @keyframes contactsSlideUpFade {
+    from {
+      opacity: 0;
+      transform: translateY(36px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
 .cardList {
   margin-left: auto;
   padding: 50px 40px 50px;
@@ -15,6 +28,23 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+
+  .cardItem {
+    opacity: 0;
+    animation: contactsSlideUpFade 0.55s ease-out forwards;
+  }
+
+  .cardItem:nth-child(1) {
+    animation-delay: 0.06s;
+  }
+
+  .cardItem:nth-child(2) {
+    animation-delay: 0.12s;
+  }
+
+  .cardItem:nth-child(3) {
+    animation-delay: 0.18s;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -27,7 +57,6 @@
 
   .cardItem {
     max-width: 100%;
-    transform: none;
   }
 
   .cardItem:hover {

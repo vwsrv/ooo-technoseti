@@ -7,12 +7,36 @@
   max-width: 1170px;
 }
 
+:global {
+  @keyframes portfolioSlideUpFade {
+    from {
+      opacity: 0;
+      transform: translateY(36px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
 .portfolioContainer {
   display: grid;
   padding: 50px 40px 50px;
   gap: 50px;
   grid-template-columns: repeat(2, 1fr);
   transition: all 0.3s ease-in-out;
+
+  > * {
+    opacity: 0;
+    animation: portfolioSlideUpFade 0.55s ease-out forwards;
+  }
+
+  @for $i from 1 through 20 {
+    > *:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.06}s;
+    }
+  }
 
   @media (max-width: 1536px) {
     grid-template-columns: repeat(2, 1fr);
