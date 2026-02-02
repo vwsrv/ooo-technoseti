@@ -10,3 +10,5 @@ export const ObjectDescriptionPage: FC = () => (
     <ObjectDescription />
   </div>
 );
+
+export default ObjectDescriptionPage;
