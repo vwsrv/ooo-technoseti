@@ -18,6 +18,22 @@ import {
   imageOurObject,
 } from '@/shared';
 
+const techCardList = [
+  {
+    name: 'Проектирование',
+    description:
+      'Проектируем очистные, КНС, КОС, ЛОС и т д. Согласовываем утверждаем РД. Прям рэпчина',
+  },
+  {
+    name: 'Проектирование',
+    description: 'Поставка оборудования очень быстро, очень в срок.',
+  },
+  {
+    name: 'Проектирование',
+    description: 'Шеф-монтаж, сервисное обслуживание и постгарантийный ремонт.',
+  },
+];
+
 const MainPage: FC = () => {
   const router = useRouter();
 
@@ -124,27 +140,9 @@ const MainPage: FC = () => {
           />
           <div className={cn(classes.techCardList)}>
             <ul className={classes.techCardListContainer}>
-              <FeatureCard
-                cardItemData={{
-                  name: 'Проектирование',
-                  description:
-                    'Проектируем очистные, КНС, КОС, ЛОС и т д. Согласовываем утверждаем РД. Прям рэпчина',
-                }}
-              />
-              <FeatureCard
-                cardItemData={{
-                  name: 'Проектирование',
-                  description:
-                    'Поставка оборудования очень быстро, очень в срок.',
-                }}
-              />
-              <FeatureCard
-                cardItemData={{
-                  name: 'Проектирование',
-                  description:
-                    'Шеф-монтаж, сервисное обслуживание и постгарантийный ремонт.',
-                }}
-              />
+              {techCardList.map((cardItemData, index) => (
+                <FeatureCard key={index} cardItemData={cardItemData} />
+              ))}
             </ul>
           </div>
         </div>

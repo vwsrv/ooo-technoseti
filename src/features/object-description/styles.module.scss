@@ -1,3 +1,16 @@
+:global {
+  @keyframes objectDescriptionSlideUpFade {
+    from {
+      opacity: 0;
+      transform: translateY(36px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
 .objectDescriptionPage {
   max-width: 1170px;
   margin: auto;
@@ -6,11 +19,12 @@
 
 .content {
   box-sizing: border-box;
-  padding: 70px 40px 150px;
+  padding: 50px 40px 50px;
   width: 100%;
 
-  @media (max-width: 1024px) {
-    padding: 0 10px;
+  @media (max-width: 768px) {
+    padding: 0 10px 100px;
+    max-width: 768px;
   }
 }
 
@@ -21,6 +35,11 @@
   overflow-x: auto;
   overflow-y: hidden;
   padding-bottom: 8px;
+  min-width: 0;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x;
 
   &::-webkit-scrollbar {
     height: 6px;
@@ -30,6 +49,15 @@
     background: #ccc;
     border-radius: 3px;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding-bottom: 0;
+    gap: clamp(8px, 2vw, 12px);
+    padding-inline: 0;
+  }
 }
 
 .imageContainer {
@@ -38,10 +66,18 @@
   width: 400px;
   min-height: 250px;
   overflow: hidden;
+  opacity: 0;
+  animation: objectDescriptionSlideUpFade 0.55s ease-out forwards;
+
+  @for $i from 1 through 15 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.06}s;
+    }
+  }
 
   @media (max-width: 768px) {
-    width: 280px;
-    min-height: 180px;
+    width: 100%;
+    min-height: clamp(180px, 45vw, 250px);
   }
 
   &:hover {
@@ -64,13 +100,21 @@
 }
 
 .objectTextContainer {
-  padding: 70px 0 0;
+  padding: 30px 0 0;
   display: flex;
   flex-direction: column;
 }
 
 .objectText {
   margin: 0;
+  opacity: 0;
+  animation: objectDescriptionSlideUpFade 0.55s ease-out forwards;
+
+  @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{0.2 + $i * 0.06}s;
+    }
+  }
 }
 
 .objectTitle {

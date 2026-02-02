@@ -48,11 +48,15 @@
   color: var(--light-grey-color);
   background-color: var(--black-color);
   height: 200px;
-  line-height: 22px;
+  line-height: 1.57;
 
   @media (max-width: 1024px) {
     padding: 40px 10px 40px;
     height: auto;
+  }
+
+  @media (max-width: 768px) {
+    line-height: 1.5;
   }
 }
 

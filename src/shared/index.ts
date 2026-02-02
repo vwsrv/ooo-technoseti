@@ -1,6 +1,5 @@
 export { imageNotFound } from './constants/not-found-image-link';
 export { metadata } from './constants/metadata';
-export { menuNavData } from './constants/menu-navigation-data';
 export {
   BP_LG,
   BP_XL,

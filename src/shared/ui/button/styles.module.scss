@@ -55,5 +55,15 @@
       background-color: var(--black-color);
       color: var(--pink-color);
     }
+
+    @media (max-width: 768px) {
+      position: static;
+      clip-path: none;
+      width: 100%;
+      max-width: none;
+      text-align: center;
+      padding: 14px 25px;
+      white-space: normal;
+    }
   }
 }

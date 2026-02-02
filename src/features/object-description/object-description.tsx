@@ -1,6 +1,6 @@
 'use client';
 
-import { FC, useState, useEffect } from 'react';
+import { FC, useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import classes from './styles.module.scss';
@@ -20,10 +20,23 @@ export const ObjectDescription: FC = () => {
   const [portfolio, setPortfolio] = useState<PortfolioItem[]>([]);
   const [isPopupOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const imageListRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     fetchPortfolio().then(setPortfolio);
   }, []);
+
+  useEffect(() => {
+    const el = imageListRef.current;
+    if (!el) return;
+    const handleWheel = (e: WheelEvent) => {
+      if (el.scrollWidth <= el.clientWidth) return;
+      e.preventDefault();
+      el.scrollLeft += e.deltaY;
+    };
+    el.addEventListener('wheel', handleWheel, { passive: false });
+    return () => el.removeEventListener('wheel', handleWheel);
+  }, [portfolio]);
 
   const currentObject = portfolio.find(
     (item) => item.id === Number(typeof id === 'string' ? id : undefined)
@@ -43,7 +56,7 @@ export const ObjectDescription: FC = () => {
     <div className={classes.objectDescriptionPage}>
       <PageHeader headerTitle={currentObject.title} />
       <div className={classes.content}>
-        <div className={classes.imageList}>
+        <div ref={imageListRef} className={classes.imageList}>
           {currentObject.src.map((item, index) => (
             <div
               className={classes.imageContainer}
@@ -71,6 +84,7 @@ export const ObjectDescription: FC = () => {
           ))}
         </div>
       </div>
+
       <ImagePopup
         key={isPopupOpen ? (selectedIndex ?? 0) : 'closed'}
         images={imageUrls}

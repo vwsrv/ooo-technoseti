@@ -4,7 +4,6 @@ import { FC, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import {
-  menuNavData,
   MenuNavLink,
   useMediaQuery,
   imageLogoWidthWhite,
@@ -57,9 +56,11 @@ const HeaderNavigation: FC = () => {
             className={cn(classes.navigationList)}
             onClick={() => setIsOpen(false)}
           >
-            {menuNavData.map((item, index) => (
-              <MenuNavLink key={index} link={item.link} name={item.name} />
-            ))}
+            <MenuNavLink link="/" name="Главная" />
+            <MenuNavLink link="/catalog" name="Продукция" />
+            <MenuNavLink link="/objects" name="Объекты" />
+            <MenuNavLink link="/news" name="Новости и статьи" />
+            <MenuNavLink link="/contacts" name="Контакты" />
           </div>
         </div>
       </>

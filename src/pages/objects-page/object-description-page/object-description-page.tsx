@@ -1,8 +1,12 @@
 'use client';
 
 import { FC } from 'react';
+import cn from 'classnames';
 import { ObjectDescription } from '@/features';
+import classes from '../styles.module.scss';
 
-const ObjectDescriptionPage: FC = () => <ObjectDescription />;
-
-export default ObjectDescriptionPage;
+export const ObjectDescriptionPage: FC = () => (
+  <div className={cn(classes.portfolio)}>
+    <ObjectDescription />
+  </div>
+);

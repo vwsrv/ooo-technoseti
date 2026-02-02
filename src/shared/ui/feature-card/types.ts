@@ -1,5 +1,11 @@
 import { DetailedHTMLProps, HTMLAttributes } from 'react';
-import { TechCardProps } from '@/features';
+import { StaticImageData } from 'next/image';
+
+export interface TechCardProps {
+  name: string;
+  description: string;
+  src?: StaticImageData;
+}
 
 export interface typeFeatureCardProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {

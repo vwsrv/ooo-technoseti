@@ -35,12 +35,24 @@
       font-weight: normal;
       margin-top: 5px;
       margin-bottom: 16px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
     }
 
     h3,
     p {
       margin-top: 5px;
       transition: all 0.2s 0s ease;
+    }
+
+    p.description {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
     &:hover {

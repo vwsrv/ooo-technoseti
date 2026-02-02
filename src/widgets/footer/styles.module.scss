@@ -35,6 +35,10 @@
   line-height: 1.7;
   max-width: 336px;
   transition: color 0.3s ease;
+
+  @media (max-width: 768px) {
+    line-height: 1.5;
+  }
 }
 
 .footerColumnLinks {

@@ -29,7 +29,12 @@ export const ProductCard: FC<typeProductCardProps> = ({
         <h3 className={cn(classes.cardTitle)}>{title}</h3>
         <p className={cn(classes.cardDescription)}>{description}</p>
       </div>
-      <Button disabled={false} variant="pink" onClick={onClick}>
+      <Button
+        disabled={false}
+        variant="pink"
+        className={classes.cardButton}
+        onClick={onClick}
+      >
         Читать далее
       </Button>
     </div>
