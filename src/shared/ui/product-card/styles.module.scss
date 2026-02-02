@@ -20,6 +20,7 @@
     right: 0px;
     background-color: rgba(0, 0, 0, 0.03);
     z-index: 1;
+    pointer-events: none;
   }
 
   &::after {
@@ -31,6 +32,7 @@
     right: 0px;
     background-color: rgba(0, 0, 0, 0.03);
     z-index: 1;
+    pointer-events: none;
   }
 
   .cardContainer {
@@ -44,7 +46,17 @@
     position: relative;
     width: 100%;
     aspect-ratio: 4/3;
+    min-height: 120px;
+    flex-shrink: 0;
     overflow: hidden;
+
+    @media (min-width: 481px) {
+      min-height: 140px;
+    }
+
+    @media (min-width: 769px) {
+      min-height: 0;
+    }
   }
 
   .cardImage {
@@ -106,5 +118,17 @@
 
   .cardButton {
     margin-top: auto;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      padding: 10px 16px;
+      min-height: 36px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 11px;
+      padding: 8px 12px;
+      min-height: 32px;
+    }
   }
 }
