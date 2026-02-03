@@ -29,8 +29,23 @@ export const ContactCard: FC<typeContactCardProps> = ({
       </div>
       <ul className={cn(classes.contactInfo)}>
         <li className={cn(classes.contactAddress)}>{address}</li>
-        <li className={cn(classes.contactTel)}>{tel}</li>
-        {email && <li className={cn(classes.contactEmail)}>{email}</li>}
+        {tel && (
+          <li className={cn(classes.contactTel)}>
+            <a
+              href={`tel:+${tel.replace(/\D/g, '').replace(/^8/, '7')}`}
+              className={classes.contactLink}
+            >
+              {tel}
+            </a>
+          </li>
+        )}
+        {email && (
+          <li className={cn(classes.contactEmail)}>
+            <a href={`mailto:${email}`} className={classes.contactLink}>
+              {email}
+            </a>
+          </li>
+        )}
       </ul>
     </div>
   );

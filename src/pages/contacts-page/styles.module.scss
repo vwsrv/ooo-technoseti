@@ -30,6 +30,9 @@
   gap: 20px;
 
   .cardItem {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
     opacity: 0;
     animation: contactsSlideUpFade 0.55s ease-out forwards;
   }

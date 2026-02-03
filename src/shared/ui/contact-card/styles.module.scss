@@ -12,7 +12,6 @@
 
 .titleContainer {
   justify-content: space-between;
-  box-sizing: border-box;
   justify-items: center;
   display: flex;
   color: var(--light-grey-color);
@@ -43,11 +42,12 @@
 
 .contactInfo {
   box-sizing: border-box;
+  flex: 1;
+  min-height: 0;
   gap: 8px;
   padding: 34px 30px;
   color: var(--light-grey-color);
   background-color: var(--black-color);
-  height: 200px;
   line-height: 1.57;
 
   @media (max-width: 1024px) {
@@ -69,5 +69,20 @@
 }
 
 .contactEmail {
+  margin-bottom: 8px;
+  color: var(--blue-color);
+}
+
+.contactLink {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.contactEmail .contactLink {
   color: var(--blue-color);
 }
